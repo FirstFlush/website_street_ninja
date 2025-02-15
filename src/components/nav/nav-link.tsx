@@ -20,10 +20,7 @@ export function NavLink({
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
-    
-    // If it's a hash link
     if (href.startsWith('#')) {
-      // If we're not already on the home page
       if (window.location.pathname !== '/') {
         router.push('/')
         setTimeout(() => {
@@ -31,7 +28,6 @@ export function NavLink({
           element?.scrollIntoView({ behavior: 'smooth' })
         }, 100)
       } else {
-        // If we're already on home page, just scroll
         const element = document.querySelector(href)
         element?.scrollIntoView({ behavior: 'smooth' })
       }

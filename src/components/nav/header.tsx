@@ -43,7 +43,7 @@ const Header = () => {
             </div>
             <Link href="/map">
               <Button variant="solid" color="primary">
-                  <MapPin height={20} width={20} /> <span className="ml-2">Map</span>
+                  <MapPin height={20} width={20} /> <span className="ml-1">Map</span>
               </Button> 
             </Link>               
             <div className="-mr-1 md:hidden">

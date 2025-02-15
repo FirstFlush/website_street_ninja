@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/Button'
-import Image from 'next/image';
+
 
 export function Hero() {
   return (
@@ -11,7 +11,7 @@ export function Hero() {
         <div className="w-fit h-fit mx-auto my-auto pt-[72px]">
         <h2 className="mx-auto max-w-4xl font-display  px-4 sm:px-0 [text-wrap:balance] text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
           {' '}
-          <span className="relative whitespace-nowrap  text-primary">
+          <span className="relative whitespace-nowrap  text-primary-dark-10">
             <svg
               aria-hidden="true"
               viewBox="0 0 418 42"

@@ -22,6 +22,7 @@ const MobileNavigation = () => {
             {({ open }) => <MobileNavIcon open={open} />}
           </PopoverButton>
           <PopoverBackdrop
+            key={Math.random()} // 👈 Forces React to remount it every time menu opens
             transition
             className="inset-0 bg-background-dark/50 duration-150 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in"
             style={{
@@ -32,6 +33,7 @@ const MobileNavigation = () => {
           <PopoverPanel
             transition
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-background-dark/95 p-4 text-lg tracking-tight text-foreground-dark ring-1 shadow-xl ring-slate-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
+            // className="fixed top-0 left-0 right-0 h-screen w-screen flex origin-top flex-col rounded-2xl bg-background-dark/95 p-4 text-lg tracking-tight text-foreground-dark ring-1 shadow-xl ring-slate-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
           >
             <MobileNavLink href="#how-it-works" close={close}>How it works</MobileNavLink>
             <MobileNavLink href="#next-steps" close={close}>Next steps</MobileNavLink>
@@ -39,7 +41,7 @@ const MobileNavigation = () => {
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/map" className="flex max-w-fit" close={close}>
               <Button variant="solid" color="primary">
-                <MapPin height={16} width={16} /> <span className="pl-2">Map</span>
+                <MapPin height={16} width={16} /> <span className="ml-1">Map</span>
               </Button>
             </MobileNavLink>
           </PopoverPanel>
