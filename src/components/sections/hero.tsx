@@ -1,13 +1,12 @@
 import { Button } from '@/components/ui/Button'
-import { Container } from '@/components/container'
+import Image from 'next/image';
 
 export function Hero() {
   return (
     <div 
       className="relative h-[95svh] w-full" 
-      // style={{ backgroundImage: "url('/images/hero_image.jpg')" }}
     >
-      {/* <div className="absolute inset-0 bg-black/30" />  */}
+
       <div className="relative z-10 flex h-full flex-col items-center bg-neutral-300 justify-center text-center">
         <div className="w-fit h-fit mx-auto my-auto pt-[72px]">
         <h2 className="mx-auto max-w-4xl font-display  px-4 sm:px-0 [text-wrap:balance] text-4xl font-medium tracking-tight text-foreground sm:text-5xl">

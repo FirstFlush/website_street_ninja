@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import { faqsData } from './sections/faqs/faqData'
+import { faqsData } from './faqData'
 import { Container } from '@/components/container'
-import backgroundImage from '@/images/background-faqs.jpg'
+// import backgroundImage from '@/images/background-faqs.jpg'
+import backgroundImage from '@/images/blood-bg.jpg'
 
 
 export function Faqs() {
@@ -19,6 +20,7 @@ export function Faqs() {
         height={946}
         unoptimized
       />
+
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
@@ -28,8 +30,7 @@ export function Faqs() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+            If you’ve read how it works but still have a few questions, this should help.
           </p>
         </div>
         <ul

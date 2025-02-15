@@ -1,5 +1,5 @@
 import { CallToAction } from '@/components/sections/call-to-action'
-import { Faqs } from '@/components/Faqs'
+import { Faqs } from '@/components/sections/faqs/faqs'
 import Footer from '@/components/nav/footer'
 
 import { Hero } from '@/components/sections/hero'

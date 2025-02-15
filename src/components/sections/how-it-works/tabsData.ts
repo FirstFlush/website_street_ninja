@@ -13,7 +13,7 @@ export interface ITab {
   icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>
 }
 
-export const tabs = [
+export const tabs: Array<ITab> = [
     {
       title: 'Resources',
       description:

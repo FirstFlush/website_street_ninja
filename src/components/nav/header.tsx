@@ -38,7 +38,7 @@ const Header = () => {
           <div className="flex items-center gap-x-5 md:gap-x-6">
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#how-it-works">How it works</NavLink>
-              <NavLink href="#about">About</NavLink>
+              <NavLink href="#next-steps">Next steps</NavLink>
               <NavLink href="#get-involved">Get involved</NavLink>
             </div>
             <Link href="/map">
