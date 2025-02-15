@@ -2,10 +2,10 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/Button'
-import { Container } from '@/components/Container'
+import { Container } from '@/components/container'
 import Logo from '@/components/logo'
 import { NavLink } from '@/components/nav/nav-link'
-import { MapIcon } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import MobileNavigation from './mobile-nav'
 import clsx from 'clsx'
 
@@ -41,16 +41,11 @@ const Header = () => {
               <NavLink href="#about">About</NavLink>
               <NavLink href="#get-involved">Get involved</NavLink>
             </div>
-            <div className={clsx(
-              "rounded-full p-2 bg-primary text-foreground-dark ",
-              "cursor-pointer hover:bg-background-dark hover:text-foreground-dark transition-colors duration-300"
-            )}>
-                <MapIcon height={24} width={24} />
-            </div>
-            {/* <div>
-              <MapIcon height={24} width={24} />
-            </div> */}
-                
+            <Link href="/map">
+              <Button variant="solid" color="primary">
+                  <MapPin height={20} width={20} /> <span className="ml-2">Map</span>
+              </Button> 
+            </Link>               
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>

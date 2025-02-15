@@ -32,11 +32,11 @@ const MobileNavigation = () => {
           <MobileNavLink href="#about">About</MobileNavLink>
           <MobileNavLink href="#get-involved">Get involved</MobileNavLink>
           <hr className="m-2 border-slate-300/40" />
-          <MobileNavLink href="/map" className="flex">
-            <div className="rounded-full p-2 bg-primary-dark-10">
-              <MapIcon height={16} width={16} />
-            </div><div className="pl-2">Map</div>
-          </MobileNavLink>
+          {/* <MobileNavLink href="/map" className="flex"> */}
+            {/* <div className="rounded-full p-2 bg-primary-dark-10">
+              <MapPin height={16} width={16} />
+            </div><div className="pl-2">Map</div> */}
+          {/* </MobileNavLink> */}
         </PopoverPanel>
       </Popover>
     )

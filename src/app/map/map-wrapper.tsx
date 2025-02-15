@@ -6,7 +6,8 @@ import { fetchResources } from "@/api/resources"
 // import Map from "@/components/map"
 const Map = dynamic(() => import("@/app/map/map"), { ssr: false })
 
-export default function MapWrapper() {
+
+const MapWrapper = () => {
   const [mapData, setMapData] = useState<MapData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -39,3 +40,6 @@ export default function MapWrapper() {
 //   return <div>blehhh</div>
 
 }
+
+
+export default MapWrapper;
