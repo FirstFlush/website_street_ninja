@@ -8,7 +8,7 @@ export function WhyItMatters() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pt-20 pb-14 sm:pt-32 sm:pb-20 lg:pb-32"
+      className="pt-20 sm:pt-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">

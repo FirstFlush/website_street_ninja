@@ -5,7 +5,8 @@ const Logo = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => 
   return (
     <div className={clsx(
       "sm:text-3xl font-normal tracking-tight text-2xl text-foreground-dark",
-      "leading-[unset]", 
+      "leading-[unset]",
+      "hover:text-primary", 
       className
     )} {...props}>
       <h1>Street Ninja</h1>

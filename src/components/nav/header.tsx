@@ -7,7 +7,7 @@ import Logo from '@/components/logo'
 import { NavLink } from '@/components/nav/nav-link'
 import { MapPin } from 'lucide-react'
 import MobileNavigation from './mobile-nav'
-import clsx from 'clsx'
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)

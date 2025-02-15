@@ -3,9 +3,9 @@ import clsx from 'clsx'
 
 const baseStyles = {
   solid:
-    'group inline-flex cursor-pointer transition-colors duration-300 items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2',
+    'select-none group inline-flex cursor-pointer transition-colors duration-300 items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2',
   outline:
-    'group inline-flex cursor-pointer transition-colors duration-300 ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-hidden',
+    'select-none group inline-flex cursor-pointer transition-colors duration-300 ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-hidden focus:ring-primary focus:text-primary',
 }
 
 const variantStyles = {
@@ -20,9 +20,9 @@ const variantStyles = {
   },
   outline: {
     slate:
-      'ring-foreground text-foreground hover:text-primary-dark-10 hover:ring-primary-dark-10 active:bg-primary active:bg-primary focus-visible:outline-primary-light-20',
+      'ring-foreground text-foreground hover:text-primary-dark-10 hover:ring-primary-dark-10 active:bg-primary active:bg-primary focus-visible:outline-primary-light-10',
     white:
-      'ring-white/70 duration-300 text-foreground-dark hover:text-primary hover:ring-primary-dark-10 active:ring-primary active:text-primary-dark-10 focus-visible:outline-primary-light-20',
+      'ring-white/70 duration-300 text-foreground-dark hover:text-primary hover:ring-primary-dark-10 active:ring-primary active:text-primary-dark-10 focus-visible:outline-primary-light-10',
   },
 }
 

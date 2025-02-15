@@ -49,6 +49,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: white;
+  background-color: #db3c4c;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
