@@ -1,11 +1,14 @@
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/container'
 import BackgroundImage from '../visual/background-image'
-import { GITHUB } from '@/data/contact'
+import { GITHUB, EMAIL } from '@/data/contact'
+import { Mail } from 'lucide-react';
+
+
 export function CallToAction() {
   return (
     <section
-      id="get-started-today"
+      id="get-involved"
       className="relative overflow-hidden bg-gray-900 py-32"
     >
       <BackgroundImage />
@@ -17,7 +20,7 @@ export function CallToAction() {
           <p className="mt-4 text-lg tracking-tight text-gray-300">
             Street Ninja is open-source and built for the community. Check out the project and get involved.
           </p>
-          <div className="mt-10 flex gap-24 items-center justify-center">
+          <div className="mt-10 flex gap-8 items-center justify-center">
             <Button
               href={GITHUB} // Replace with actual GitHub URL
               color="primary"
@@ -25,7 +28,7 @@ export function CallToAction() {
               rel="noopener noreferrer"
             >
               <svg
-                className="h-6 w-6 fill-white mr-2"
+                className="h-7 w-7 fill-white mr-2"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
               >
@@ -36,7 +39,10 @@ export function CallToAction() {
             <Button
               color="white"
               variant="outline"
+              // href={EMAIL}
+              className=""
             >
+                <Mail className='mr-2 5-6 w-6' />
                 Email
 
             </Button>

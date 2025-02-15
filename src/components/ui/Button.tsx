@@ -22,7 +22,7 @@ const variantStyles = {
     slate:
       'ring-foreground text-foreground hover:text-primary-dark-10 hover:ring-primary-dark-10 active:bg-primary active:bg-primary focus-visible:outline-primary-light-20',
     white:
-      'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
+      'ring-white/70 duration-300 text-foreground-dark hover:text-primary hover:ring-primary-dark-10 active:ring-primary active:text-primary-dark-10 focus-visible:outline-primary-light-20',
   },
 }
 

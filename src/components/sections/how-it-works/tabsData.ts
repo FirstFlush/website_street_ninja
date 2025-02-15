@@ -2,8 +2,16 @@ import screenshotExpenses from '@/images/screenshots/expenses.png'
 import screenshotPayroll from '@/images/screenshots/payroll.png'
 import screenshotReporting from '@/images/screenshots/reporting.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
-import { List, PlusCircle, Info, Map, Filter } from "lucide-react";
+import { List, PlusCircle, Info, Map, Filter, LucideProps } from "lucide-react";
+import { ForwardRefExoticComponent, RefAttributes } from 'react';
+import { StaticImageData } from 'next/image';
 
+export interface ITab {
+  title: string
+  description: string
+  image: StaticImageData
+  icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>
+}
 
 export const tabs = [
     {

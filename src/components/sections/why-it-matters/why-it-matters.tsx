@@ -13,10 +13,10 @@ export function WhyItMatters() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Fast, Reliable, and Accessible for Anyone
+            Why it works
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Street Ninja works via SMS—no internet, no apps, no sign-ups. Just real-time, up-to-date service information in seconds.
+            No apps, no sign-ups—just fast, real-time access to essential services.
           </p>
         </div>
         <ReasonsMobile />
