@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/Button'
 import { SelectField, TextField } from '@/components/Fields'
-import { Logo } from '@/components/logo'
-import { SlimLayout } from '@/components/SlimLayout'
+// import { Logo } from '@/components/logo'
+import { SlimLayout } from '@/components/layout/slim-layout'
 
 export const metadata: Metadata = {
   title: 'Sign Up',
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 export default function Register() {
   return (
     <SlimLayout>
-      <div className="flex">
-        <Link href="/" aria-label="Home">
-          <Logo className="h-10 w-auto" />
-        </Link>
-      </div>
+      {/* <div className="flex"> */}
+        {/* <Link href="/" aria-label="Home"> */}
+          {/* <Logo className="h-10 w-auto" /> */}
+        {/* </Link> */}
+      {/* </div> */}
       <h2 className="mt-20 text-lg font-semibold text-gray-900">
         Get started for free
       </h2>

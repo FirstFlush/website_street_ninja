@@ -1,24 +1,21 @@
 'use client'
-import { Container } from '@/components/container'
+import { Container } from '@/components/layout/container'
 import ReasonsDesktop from './reasons-desktop'
 import ReasonsMobile from './reasons-mobile'
+import SectionHeader from '@/components/layout/section-header'
 
 export function WhyItMatters() {
   return (
     <section
       id="secondary-features"
-      aria-label="Features for simplifying everyday business tasks"
+      aria-label="Why Street Ninja will be effective"
       className="pt-20 sm:pt-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Why it works
-          </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            No apps, no sign-ups—just fast, real-time access to essential services.
-          </p>
-        </div>
+        <SectionHeader 
+          title="Why it works"
+          subtitle="No apps, no sign-ups—just fast, real-time access to essential services."
+        />
         <ReasonsMobile />
         <ReasonsDesktop />
       </Container>

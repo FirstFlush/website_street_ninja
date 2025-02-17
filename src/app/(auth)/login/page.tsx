@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { TextField } from '@/components/Fields'
 import { Logo } from '@/components/logo'
-import { SlimLayout } from '@/components/SlimLayout'
+import { SlimLayout } from '@/components/layout/slim-layout'
 
 export const metadata: Metadata = {
   title: 'Sign In',

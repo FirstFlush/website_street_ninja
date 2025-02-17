@@ -48,6 +48,7 @@ const MobileNavLink = ({
       onClick={handleClick}
       className={clsx(
         'block w-full p-2',
+        'text-foreground-dark',
         'active:text-primary',
         'max-w-fit',
         className

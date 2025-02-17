@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/Button'
-import { Container } from '@/components/container'
+import { Container } from '@/components/layout/container'
 import Logo from '@/components/logo'
 import { NavLink } from '@/components/nav/nav-link'
 import { MapPin } from 'lucide-react'

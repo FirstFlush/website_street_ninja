@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Container } from '@/components/container'
+import { Container } from '@/components/layout/container'
 import Logo from '@/components/logo'
 import { NavLink } from '@/components/nav/nav-link'
 import { GITHUB } from '@/data/contact'

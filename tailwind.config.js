@@ -23,7 +23,7 @@ module.exports = {
           dark: "#FAFAFA"
         },
         subheader: {
-          DEFAULT: "4A4A4A",
+          DEFAULT: "#4A4A4A",
           light: "#4A4A4A",
           dark: "#A1A1A1"
         },

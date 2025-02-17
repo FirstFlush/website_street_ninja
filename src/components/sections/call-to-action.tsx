@@ -1,11 +1,12 @@
+import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
-import { Container } from '@/components/container'
+import { Container } from '@/components/layout/container'
 import BackgroundImage from '../visual/background-image'
-import { GITHUB, EMAIL } from '@/data/contact'
+import { GITHUB } from '@/data/contact'
 import { MessageCircle } from 'lucide-react';
+import SectionHeader from '../layout/section-header';
 
-
-export function CallToAction() {
+const CallToAction = () => {
   return (
     <section
       id="get-involved"
@@ -14,21 +15,22 @@ export function CallToAction() {
       <BackgroundImage />
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Help build Street Ninja
-          </h2>
-          <p className="mt-4 text-lg tracking-tight text-gray-300">
-            Street Ninja is open-source and built for the community. If you have feedback, want to contribute, or just want to connect, reach out. Developers can check out the GitHub repo to get involved.
-          </p>
+          <SectionHeader 
+            title="Help build Street Ninja"
+            subtitle="Street Ninja is open-source and built for the community. If you have feedback, want to contribute, or just want to connect, reach out. Developers can check out the GitHub repo to get involved."
+            isDark={true}
+          />
           <div className="mt-10 flex gap-8 items-center justify-center">
-            <Button
-              color="primary"
-              variant="solid"
-              className=""
-            >
-              <MessageCircle className='mr-2 h-7 w-7' />
-              Contact
-            </Button>
+            <Link href="/contact">
+              <Button
+                color="primary"
+                variant="solid"
+                className=""
+              >
+                <MessageCircle className='mr-2 h-7 w-7' />
+                Contact
+              </Button>
+            </Link>
             <Button
               href={GITHUB}
               color="white"
@@ -52,3 +54,5 @@ export function CallToAction() {
     </section>
   )
 }
+
+export default CallToAction;

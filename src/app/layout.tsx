@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     template: '%s - Street Ninja',
     default: 'Street Ninja',
   },
+  icons: "/images/favicon.ico",
   description:
     "Street Ninja helps people navigate street life with real-time access to food, shelter, wifi, and other resources—fast, simple, and judgment-free.",
 }
@@ -35,7 +36,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
+        'h-full scroll-smooth bg-background antialiased',
         inter.variable,
         lexend.variable,
       )}

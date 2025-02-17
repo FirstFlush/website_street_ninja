@@ -62,8 +62,17 @@ html {
 body {
     /* min-height: 100vh; */
     font-family: var(--font-sans, sans-serif);
+    /* background-color: #FAFAFA; */
     /* background-color: theme("colors.background.light");
     color: theme("colors.text.light"); */
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
+
+/* a {
+  color: #D72638;
+}
+a:hover, 
+a:focus {
+  opacity: 0.7;
+} */

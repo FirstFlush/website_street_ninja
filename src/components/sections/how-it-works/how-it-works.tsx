@@ -1,14 +1,9 @@
 'use client'
-
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import clsx from 'clsx'
-// import { tabs } from '@/data/tabs'
-import { tabs } from './tabsData'
-import { Container } from '@/components/container'
+import { Container } from '@/components/layout/container'
 import BackgroundImage from '../../visual/background-image'
 import Tabs from './tabs'
+import SectionHeader from '@/components/layout/section-header'
 
 
 const HowItWorks = () => {
@@ -40,18 +35,13 @@ const HowItWorks = () => {
       <BackgroundImage />
 
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            How it works
-          </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Text for help. Get real-time info. Locate key services like food and
-            shelter without apps or internet.
-          </p>
-        </div>
-
+        <SectionHeader 
+          title="How it works"
+          subtitle="Text for help. Get real-time info. Locate key services like food and
+            shelter without apps or internet."
+          isDark={true}
+        />
         <Tabs tabOrientation={tabOrientation} />
-
       </Container>
     </section>
   )

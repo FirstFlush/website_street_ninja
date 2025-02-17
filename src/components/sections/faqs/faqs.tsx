@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import { faqsData } from './faqData'
-import { Container } from '@/components/container'
+import { Container } from '@/components/layout/container'
 // import backgroundImage from '@/images/background-faqs.jpg'
 import backgroundImage from '@/images/blood-bg.jpg'
+import SectionHeader from '@/components/layout/section-header'
 
 
-export function Faqs() {
+const Faqs = () => {
   return (
     <section
       id="faq"
@@ -23,7 +24,12 @@ export function Faqs() {
 
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2
+          <SectionHeader 
+            title="Frequently asked questions"
+            subtitle="If you’ve read how it works but still have a few questions, this should help."
+            align="left"
+          />
+          {/* <h2
             id="faq-title"
             className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
           >
@@ -31,7 +37,7 @@ export function Faqs() {
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             If you’ve read how it works but still have a few questions, this should help.
-          </p>
+          </p> */}
         </div>
         <ul
           role="list"
@@ -56,3 +62,5 @@ export function Faqs() {
     </section>
   )
 }
+
+export default Faqs;
