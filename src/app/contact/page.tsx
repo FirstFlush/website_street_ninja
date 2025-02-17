@@ -2,7 +2,7 @@ import ContactForm from "./contact-form"
 import { SlimLayout } from "@/components/layout/slim-layout";
 import Footer from "@/components/nav/footer";
 import SectionHeader from "@/components/layout/section-header";
-
+import { CONTACT_EMAIL } from "@/data/contact";
 
 const ContactPage = () => {
 
@@ -15,6 +15,7 @@ const ContactPage = () => {
                         subtitle="Questions, feedback, or interested in collaborating? Fill out the form below and I’ll get back to you as soon as possible!"
                         align="left"
                     />
+                    <div className="mt-4 text-[90%] text-gray-500">Hate forms? Email us instead at <span className="link">{CONTACT_EMAIL}</span></div>
                 </div>
                 <ContactForm />
             </div>

@@ -14,7 +14,8 @@ export function SlimLayout({ children }: { children: React.ReactNode }) {
         </div>
 
         {/* Background container */}
-        <div className="hidden sm:contents lg:relative lg:block lg:flex-1">
+        {/* <div className="hidden sm:contents lg:relative lg:block lg:flex-1"> */}
+        <div className="hidden lg:relative lg:block lg:flex-1">
           <div 
             className="absolute inset-0 w-full h-full bg-cover bg-center" 
             style={{ backgroundImage: `url(${backgroundPattern.src})` }} 

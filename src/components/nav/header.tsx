@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/layout/container'
 import Logo from '@/components/logo'
 import { NavLink } from '@/components/nav/nav-link'
-import { MapPin } from 'lucide-react'
+import { MapPin, MessageCircle } from 'lucide-react'
 import MobileNavigation from './mobile-nav'
 
 
@@ -39,7 +39,9 @@ const Header = () => {
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#how-it-works">How it works</NavLink>
               <NavLink href="#next-steps">Next steps</NavLink>
-              <NavLink href="#get-involved">Get involved</NavLink>
+              <NavLink href="/contact" className="">
+                <MessageCircle className='h-5 w-5 inline-block align-middle'/><span className="ml-1">Contact</span>
+              </NavLink>
             </div>
             <Link href="/map">
               <Button variant="solid" color="primary">

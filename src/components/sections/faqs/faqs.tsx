@@ -46,7 +46,8 @@ const Faqs = () => {
           {faqsData.map((column, columnIndex) => (
             <li key={columnIndex}>
               <ul role="list" className="flex flex-col gap-y-8">
-                {column.map((faq, faqIndex) => (
+              <h5 className="text-primary-dark-10 font-semibold tracking-wider">{column.header}</h5>
+                {column.data.map((faq, faqIndex) => (
                   <li key={faqIndex}>
                     <h3 className="font-display text-lg/7 text-slate-900">
                       {faq.question}

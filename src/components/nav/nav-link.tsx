@@ -42,7 +42,7 @@ export function NavLink({
       onClick={handleClick}
       className={clsx(
         "inline-block rounded-full px-4 py-2 text-md",
-        "text-foreground-dark/70 hover:bg-background-dark/70 hover:text-white",
+        "text-foreground-dark hover:bg-background-dark/70 hover:text-white",
         "transition-colors duration-300",
         className,
       )}

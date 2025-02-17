@@ -50,7 +50,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div>
+        <div className=" max-w-md mx-auto my-8">
             {submitted ? 
             <Notification 
                 title="Received!"
@@ -60,7 +60,7 @@ const ContactForm = () => {
             <form 
             onSubmit={handleSubmit(onSubmit)} 
             method="POST"
-            className="space-y-8 max-w-md mx-auto my-8"
+            className="space-y-8"
             // className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2"
             >
             <TextField
@@ -88,6 +88,7 @@ const ContactForm = () => {
                 label="Message"
                 name="msg"
                 control={control}
+                placeholder="Tell us how you’d like to get involved—or just say hi!"
             />
             <SelectField
                 label="Preferred contact method"
