@@ -2,6 +2,9 @@ import screenshotExpenses from '@/images/screenshots/expenses.png'
 import screenshotPayroll from '@/images/screenshots/payroll.png'
 import screenshotReporting from '@/images/screenshots/reporting.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+
+import notFound from '@/images/not-found.png'
+
 import { List, PlusCircle, Info, Map, Filter, LucideProps } from "lucide-react";
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
 import { StaticImageData } from 'next/image';

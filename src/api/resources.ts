@@ -1,13 +1,11 @@
-
+import { API_ROUTES } from "@/config/apiRoutes";
+import { baseFetch } from "./baseFetch";
 
 
 export async function fetchResources() {
-
-    const API_RESOURCES = process.env.NEXT_PUBLIC_API_RESOURCES
-    if (!API_RESOURCES) {
-        throw new Error("Missing environment variable for fetchResources");
-    }
-    const res = await fetch(API_RESOURCES)
-    if (!res.ok) throw new Error("Failed to fetch resources")
-    return await res.json()
+    const res = await baseFetch(API_ROUTES.resources, {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+    });
+    return res.data
   }

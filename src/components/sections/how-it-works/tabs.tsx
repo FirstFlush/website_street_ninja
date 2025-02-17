@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import Image from 'next/image'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+import { TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { tabs } from './tabsData'
 import CustomTab from './tab'
 

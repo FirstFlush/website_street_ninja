@@ -16,7 +16,6 @@ const MapWrapper = () => {
     async function loadResources() {
       try {
         const data = await fetchResources()
-        console.log(data)
         setMapData(data)
       } catch (err) {
         setError("Failed to load map data. Please try again later.")
