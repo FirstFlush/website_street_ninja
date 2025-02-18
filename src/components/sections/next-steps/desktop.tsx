@@ -1,6 +1,7 @@
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 import { stepsData } from './stepsData'
+import Border from '@/components/layout/border'
 
 const NextStepsDesktop = () => {
   return (
@@ -26,7 +27,7 @@ const NextStepsDesktop = () => {
               </Tab>
             ))}
           </TabList>
-
+          <Border className="mt-6"/>
           <TabPanels className="mt-10">
             {stepsData.map((step, index) => (
               <TabPanel key={step.title} className="transition-opacity duration-300">

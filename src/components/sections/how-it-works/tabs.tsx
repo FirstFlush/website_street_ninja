@@ -3,7 +3,8 @@ import Image from 'next/image'
 import { TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { tabs } from './tabsData'
 import CustomTab from './tab'
-
+import Conversation from '@/components/chat/conversation'
+import { standardQuery } from '@/data/chatData'
 
 interface TabsProps {
     tabOrientation: 'horizontal' | 'vertical'
@@ -60,7 +61,16 @@ const Tabs = ({ tabOrientation }: TabsProps) => {
                         {tab.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+
+                    <div className=" overflow-hidden rounded-xl lg:shadow-xl shadow-gray-900/20 sm:w-[100%] lg:mt-0 lg:w-[67.8125rem]">
+                    <Conversation 
+                      messages={standardQuery}
+                    />
+
+
+                    </div>
+
+                    {/* <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         className="w-full"
                         src={tab.image}
@@ -68,7 +78,7 @@ const Tabs = ({ tabOrientation }: TabsProps) => {
                         priority
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                       />
-                    </div>
+                    </div> */}
                   </TabPanel>
                 ))}
               </TabPanels>

@@ -1,17 +1,18 @@
 import clsx from 'clsx';
 import { Button } from '@/components/ui/Button'
 
+
 const Hero = () => {
   return (
     <div
       className="relative h-[95svh] w-full"
       style={{
-        backgroundImage: "url('/images/bg-abstract-white.jpg')",
+        backgroundImage: "url('/images/bg-abstract-white2.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="relative z-10 flex h-full flex-col items-center bg-neutral-300/70 justify-center text-center">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
         <div className="w-fit h-fit mx-auto my-auto pt-[72px]">
 
           <h2 className={clsx(

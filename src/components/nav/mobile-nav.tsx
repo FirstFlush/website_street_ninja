@@ -8,7 +8,7 @@ import {
 import { Button } from '../ui/Button'
 import MobileNavIcon from './mobile-nav-icon'
 import MobileNavLink from './mobile-nav-link'
-import { MapPin } from 'lucide-react'
+import { MapPin, MessageCircle } from 'lucide-react'
 
 const MobileNavigation = () => {
   return (
@@ -37,11 +37,14 @@ const MobileNavigation = () => {
           >
             <MobileNavLink href="#how-it-works" close={close}>How it works</MobileNavLink>
             <MobileNavLink href="#next-steps" close={close}>Next steps</MobileNavLink>
-            <MobileNavLink href="#get-involved" close={close}>Get involved</MobileNavLink>
+            <MobileNavLink href="/contact" close={close}>                
+              <MessageCircle className="inline-block align-text-bottom" height={20} width={20}/>
+              <span className="ml-1">Contact</span>
+            </MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/map" className="flex max-w-fit" close={close}>
               <Button variant="solid" color="primary">
-                <MapPin height={16} width={16} /> <span className="ml-1">Map</span>
+                <MapPin height={20} width={20} /> <span className="ml-1">Map</span>
               </Button>
             </MobileNavLink>
           </PopoverPanel>

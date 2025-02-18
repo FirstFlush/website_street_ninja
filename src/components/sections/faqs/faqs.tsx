@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { faqsData } from './faqData'
 import { Container } from '@/components/layout/container'
 // import backgroundImage from '@/images/background-faqs.jpg'
+import Border from '@/components/layout/border'
 import backgroundImage from '@/images/blood-bg.jpg'
 import SectionHeader from '@/components/layout/section-header'
 
@@ -46,12 +47,13 @@ const Faqs = () => {
           {faqsData.map((column, columnIndex) => (
             <li key={columnIndex}>
               <ul role="list" className="flex flex-col gap-y-8">
-              <h5 className="text-primary-dark-10 font-semibold tracking-wider">{column.header}</h5>
+              <h3 className="text-primary-dark-10 text-xl font-bold tracking-wider">{column.header}</h3>
+              <Border />
                 {column.data.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className="font-display text-lg/7 text-slate-900">
+                    <h4 className="font-display text-lg/7 text-slate-900">
                       {faq.question}
-                    </h3>
+                    </h4>
                     <p className="mt-4 text-sm text-slate-700">{faq.answer}</p>
                   </li>
                 ))}

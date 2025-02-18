@@ -16,8 +16,8 @@ const CallToAction = () => {
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
           <SectionHeader 
-            title="Help build Street Ninja"
-            subtitle="Street Ninja is open-source and built for the community. If you have feedback, want to contribute, or just want to connect, reach out. Developers can check out the GitHub repo to get involved."
+            title="Get involved"
+            subtitle="If you have feedback, want to contribute, or just want to connect, reach out. Developers can check out the GitHub repo to get involved. Street Ninja is 100% open-source."
             isDark={true}
           />
           <div className="mt-10 flex gap-8 items-center justify-center">

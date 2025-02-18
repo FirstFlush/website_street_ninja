@@ -12,7 +12,7 @@ import { StaticImageData } from 'next/image';
 export interface ITab {
   title: string
   description: string
-  image: StaticImageData
+  // image: StaticImageData
   icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>
 }
 
@@ -21,35 +21,35 @@ export const tabs: Array<ITab> = [
       title: 'Resources',
       description:
         "Find food, shelter, water, restrooms, and WiFi instantly with a simple text.",
-      image: screenshotExpenses,
+      // image: screenshotExpenses,
       icon: List
     },
     {
       title: 'More',
       description:
         "Get additional results when there are too many to fit in one message.",
-      image: screenshotPayroll,
+      // image: screenshotPayroll,
       icon: PlusCircle
     },
     {
       title: 'Info',
       description:
         "Check extra details like bed availability, meal times, or shelter rules.",
-      image: screenshotReporting,
+      // image: screenshotReporting,
       icon: Info,
     },
     {
       title: 'Directions',
       description:
         "Receive step-by-step text directions to any listed location.",
-      image: screenshotVatReturns,
+      // image: screenshotVatReturns,
       icon: Map,
     },
     {
       title: 'Filter',
       description:
         "Filter searches by pet-friendly, women-only, wheelchair access, and more.",
-      image: screenshotVatReturns,
+      // image: screenshotVatReturns,
       icon: Filter,
     },
   ];
