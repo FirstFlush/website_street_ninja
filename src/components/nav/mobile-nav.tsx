@@ -37,14 +37,14 @@ const MobileNavigation = () => {
           >
             <MobileNavLink href="#how-it-works" close={close}>How it works</MobileNavLink>
             <MobileNavLink href="#next-steps" close={close}>Next steps</MobileNavLink>
-            <MobileNavLink href="/contact" close={close}>                
-              <MessageCircle className="inline-block align-text-bottom" height={20} width={20}/>
-              <span className="ml-1">Contact</span>
+            <MobileNavLink href="/map" close={close}>
+              <MapPin height={20} width={20} className="inline-block align-text-bottom"/> <span className="ml-1">Map</span>           
             </MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="/map" className="flex max-w-fit" close={close}>
+            <MobileNavLink href="/contact" className="flex max-w-fit" close={close}>
               <Button variant="solid" color="primary">
-                <MapPin height={20} width={20} /> <span className="ml-1">Map</span>
+                <MessageCircle height={20} width={20}/>
+                <span className="ml-1">Contact</span>
               </Button>
             </MobileNavLink>
           </PopoverPanel>

@@ -6,7 +6,7 @@ export const standardQuery = [
     { text: "Closest food: Union Gospel, 601 Hastings. Free lunch 11:30-1:30.", isUser: false },
     { text: "Any beds available?", isUser: true },
     { text: "First United: 320 Hastings. 15 beds left, open 24/7.", isUser: false },
-    { text: "First United: 320 Hastings. 15 beds left, open 24/7.", isUser: false },
+    { text: "First United: 320 Hastings. 15 beds left, open 24/7.", isUser: true },
     { text: "First United: 320 Hastings. 15 beds left, open 24/7.", isUser: false },
     { text: "First United: 320 Hastings. 15 beds left, open 24/7.", isUser: false },
     { text: "First United: 320 Hastings. 15 beds left, open 24/7.", isUser: false },

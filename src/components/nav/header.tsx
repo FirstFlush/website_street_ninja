@@ -39,14 +39,13 @@ const Header = () => {
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#how-it-works">How it works</NavLink>
               <NavLink href="#next-steps">Next steps</NavLink>
-              <NavLink href="/contact">
-                {/* <MessageCircle className='h-5 w-5 inline-block align-text-top'/><span className="ml-1">Contact</span> */}
-                <MessageCircle className="inline-block align-text-bottom" height={20} width={20}/><span className="ml-1">Contact</span>
+              <NavLink href="/map">
+                <MapPin className="inline-block align-text-bottom" height={20} width={20} /><span className="ml-1">Map</span>
               </NavLink>
             </div>
-            <Link href="/map">
+            <Link href="/contact">
               <Button variant="solid" color="primary">
-                  <MapPin height={20} width={20} /><span className="ml-1">Map</span>
+                  <MessageCircle height={20} width={20}/><span className="ml-1">Contact</span>
               </Button> 
             </Link>               
             <div className="-mr-1 md:hidden">

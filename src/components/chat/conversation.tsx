@@ -9,8 +9,8 @@ interface ConversationProps {
 
 const getRandomDelay = (isUser: boolean) => {
   return isUser
-    ? (Math.floor(Math.random() * (10 - 2 + 1)) + 2) * 60 * 1000 // 2-10 min in ms
-    : Math.floor(Math.random() * 60) * 1000; // 0-60 sec in ms
+    ? Math.floor(Math.random() * 60) * 1000 // 0-60 sec in ms
+    : (Math.floor(Math.random() * (10 - 2 + 1)) + 2) * 60 * 1000 // 2-10 min in ms
 };
 
 const Conversation: React.FC<ConversationProps> = ({ messages }) => {
