@@ -5,7 +5,7 @@ import { MapData, MapPoint } from "@/types/MapData";
 import "leaflet/dist/leaflet.css";
 import { resourceIcons } from "./icons";
 import { ResourceType } from "@/types/resourceType";
-
+import PopoverContent from "./popover-content";
 
 interface MapProps {
   mapData: MapData;
@@ -19,14 +19,14 @@ const Map = ({ mapData }: MapProps) => {
     <div className="relative w-full h-[100vh]">
       <MapContainer 
         center={center} 
-        zoom={13} 
+        zoom={12} 
         className="w-full h-full"
         zoomControl={false}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <ZoomControl position="bottomleft" />
-        {Object.entries(mapData.data).map(([resourceType, resources]) =>
-          resources.map((resource: MapPoint, index) => {
+        {Object.entries(mapData.resources).map(([resourceType, mapPoints]) =>
+          mapPoints.map((resource: MapPoint, index) => {
             const typescriptSafeResource = resourceType.toLowerCase() as Lowercase<ResourceType>
             return (
               <Marker
@@ -34,7 +34,10 @@ const Map = ({ mapData }: MapProps) => {
                 position={[resource.latitude, resource.longitude]}
                 icon={resourceIcons[typescriptSafeResource] || resourceIcons["default"]}
               >
-                <Popup>{resource.name ?? resourceType}</Popup>
+                {/* <Popup>{ resource.data ?? resourceType}</Popup> */}
+                <Popup>
+                  <PopoverContent data={resource.data} resourceType={resourceType} />
+                </Popup>
               </Marker>
             );
           })
