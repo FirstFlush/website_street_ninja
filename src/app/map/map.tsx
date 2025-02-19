@@ -24,7 +24,9 @@ const Map = ({ mapData }: MapProps) => {
         zoomControl={false}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <ZoomControl position="bottomleft" />
+        <div className="relative">
+          <ZoomControl position="bottomleft" />
+        </div>
         {Object.entries(mapData.resources).map(([resourceType, mapPoints]) =>
           mapPoints.map((resource: MapPoint, index) => {
             const typescriptSafeResource = resourceType.toLowerCase() as Lowercase<ResourceType>
