@@ -18,8 +18,6 @@ export default function Home() {
         <WhyItMatters />
         <NextSteps />
         <CallToAction />
-        {/* <Testimonials /> */}
-        {/* <Pricing /> */}
         <Faqs /> 
         <Footer />
       </main>

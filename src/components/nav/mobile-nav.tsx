@@ -36,7 +36,7 @@ const MobileNavigation = () => {
             // className="fixed top-0 left-0 right-0 h-screen w-screen flex origin-top flex-col rounded-2xl bg-background-dark/95 p-4 text-lg tracking-tight text-foreground-dark ring-1 shadow-xl ring-slate-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
           >
             <MobileNavLink href="#how-it-works" close={close}>How it works</MobileNavLink>
-            <MobileNavLink href="#next-steps" close={close}>Next steps</MobileNavLink>
+            <MobileNavLink href="/try-it-out" close={close}>Try it out</MobileNavLink>
             <MobileNavLink href="/map" close={close}>
               <MapPin height={20} width={20} className="inline-block align-text-bottom"/> <span className="ml-1">Map</span>           
             </MobileNavLink>

@@ -32,3 +32,10 @@ export const resourceIcons = {
   default: createCustomIcon("#525252", "#737373"),   // Gray (dark to light)
 };
 
+// shelter: createCustomIcon("#EAB308", "#FDE047"),   // Brighter Gold  
+// food: createCustomIcon("#22C55E", "#4ADE80"),      // Brighter Green  
+// water: createCustomIcon("#2563EB", "#3B82F6"),     // Brighter Blue  
+// toilet: createCustomIcon("#DC2626", "#EF4444"),    // Brighter Red  
+// wifi: createCustomIcon("#7C3AED", "#A78BFA"),      // Brighter Purple  
+// default: createCustomIcon("#737373", "#A3A3A3"),   // Brighter Gray  
+

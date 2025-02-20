@@ -1,5 +1,4 @@
-"use client"; // Ensures this runs only on the client
-
+"use client";
 import React, { useEffect, useState } from "react";
 import ChatBubble from "./chat-bubble";
 
@@ -9,11 +8,11 @@ interface ConversationProps {
 
 const getRandomDelay = (isUser: boolean) => {
   return isUser
-    ? Math.floor(Math.random() * 60) * 1000 // 0-60 sec in ms
-    : (Math.floor(Math.random() * (10 - 2 + 1)) + 2) * 60 * 1000 // 2-10 min in ms
+    ? Math.floor(Math.random() * 60) * 1000
+    : (Math.floor(Math.random() * (10 - 2 + 1)) + 2) * 60 * 1000
 };
 
-const Conversation: React.FC<ConversationProps> = ({ messages }) => {
+const Conversation = ({ messages }: ConversationProps) => {
   const [timestamps, setTimestamps] = useState<string[]>([]);
 
   useEffect(() => {
@@ -30,11 +29,12 @@ const Conversation: React.FC<ConversationProps> = ({ messages }) => {
     });
 
     setTimestamps(generatedTimestamps);
-  }, [messages]); // Run only once when `messages` are set
-  // w-[778px] w-max-[780px]
+  }, [messages]);
+  
   return (
     <div
       className="select-none mx-auto lg:mx-0 w-[100%] lg:w-max h-[680px] overflow-hidden max-w-screen lg:max-w-full px-4 py-12 rounded-2xl"
+      // className="w-[800px] rounded-2xl"
       style={{
         backgroundImage: "url('/images/bg-abstract-white.jpg')",
         backgroundSize: "cover",
