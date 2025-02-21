@@ -1,5 +1,4 @@
 "use client";
-
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import {
   MainContainer,
@@ -11,8 +10,7 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 import { useState } from "react";
 import { MessageDirection } from "@chatscope/chat-ui-kit-react/src/types/unions";
-
-
+import { submitQuery } from "@/api/smsQuery";
 
 interface ChatMessage {
     message: string;
@@ -24,15 +22,29 @@ interface ChatMessage {
 
 
 const ChatBox = () => {
+
+  const [isLoading, setIsLoading] = useState(false)
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { message: "Welcome to Street Ninja!", sentTime: "now", sender: "Street Ninja", direction: "incoming" as MessageDirection, position: "first" as "first" },
-    { message: "Try it out! Type like an SMS: 'shelter 222 main st' or 'food main & hastings'.", sentTime: "now", sender: "Street Ninja", direction: "incoming" as MessageDirection, position: "last" as "last"},
+    // { message: "This chat works just like Street Ninja’s SMS.", sentTime: "now", sender: "Street Ninja", direction: "incoming" as MessageDirection, position: "first" as "first" },
+    { message: "Ask for food, shelter, water, toilets, or WiFi, and I'll find the closest spots.", sentTime: "now", sender: "Street Ninja", direction: "incoming" as MessageDirection, position: "single" as "single"},
   ]);
 
 
-  const handleSend = (text: string) => {
+
+  const handleSend = async (text: string) => {
     if (!text.trim()) return;
-  
+    handleMessageLogic(text);
+    setIsLoading(true);
+    try {
+        const response = await submitQuery(text);
+        handleMessageLogic(response.data.data, "incoming")
+    } catch (err) {
+        handleMessageLogic("Sorry, I didn't understand that.\n\nTry something like\n'shelter 222 main st'", "incoming")
+    }
+    setIsLoading(false);
+}
+
+  const handleMessageLogic = (text: string, direction: string="outgoing") => {
     setMessages(prevMessages => {
       const lastMessage = prevMessages[prevMessages.length - 1]; 
       let position: "single" | "first" | "normal" | "last" = "single";
@@ -53,7 +65,7 @@ const ChatBox = () => {
           message: text, 
           sentTime: "now", 
           sender: "You", 
-          direction: "outgoing" as MessageDirection, 
+          direction: direction as MessageDirection, 
           position
         }
       ];
@@ -63,12 +75,12 @@ const ChatBox = () => {
   
   return (
     <div className="lg:px-0 px-4 relative h-[420px] md:h-[500px] w-[100%] max-w-[600px] min-w-[300px] md:min-w-[380px] my-0 mx-auto">
-      <MainContainer>
+      <MainContainer className="shadow-md rounded-md">
         <ChatContainer>
           <ConversationHeader>
-            <ConversationHeader.Content userName="Street Ninja Chat" info="Try it out" />
+            <ConversationHeader.Content userName="Street Ninja Chat" info={ isLoading ? "typing..." : "Try it out"} />
           </ConversationHeader>
-          <MessageList>
+          <MessageList className="py-3">
             {messages.map((msg, idx) => (
               <Message key={idx} model={msg} />
             ))}

@@ -5,6 +5,7 @@ import { baseFetch } from "./baseFetch";
 export async function submitQuery(query: string) {
     const res = await baseFetch(API_ROUTES.query, {
         method: "POST",
+        credentials: "include",
         headers: { "Content-Type": "application/json"},
         body: JSON.stringify({ "query": query })
     })
