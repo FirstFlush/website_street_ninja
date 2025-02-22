@@ -1,5 +1,5 @@
 "use client";
-
+import MapLegend from "./map-legend";
 import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from "react-leaflet";
 import { MapData, MapPoint } from "@/types/MapData";
 import "leaflet/dist/leaflet.css";
@@ -45,6 +45,7 @@ const Map = ({ mapData }: MapProps) => {
           })
         )}
       </MapContainer>
+      <MapLegend />
     </div>
   );
 };
