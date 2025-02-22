@@ -29,11 +29,11 @@ const ChatInfo = () => {
       <div className="space-y-3 text-sm">
         <div className="flex items-center gap-2">
           <ArrowRight className="w-4 h-4 text-primary-dark-10" />
-          <span className="font-mono bg-primary-dark-10/10 px-2 py-1 rounded">food near me</span>
+          <span className="font-mono bg-primary-dark-10/10 px-2 py-1 rounded">food 222 main st</span>
         </div>
         <div className="flex items-center gap-2">
           <ArrowRight className="w-4 h-4 text-primary-dark-10" />
-          <span className="font-mono bg-primary-dark-10/10 px-2 py-1 rounded">shelter 320 Hastings</span>
+          <span className="font-mono bg-primary-dark-10/10 px-2 py-1 rounded">shelter 320 Hastings e</span>
         </div>
         <div className="flex items-center gap-2">
           <ArrowRight className="w-4 h-4 text-primary-dark-10" />

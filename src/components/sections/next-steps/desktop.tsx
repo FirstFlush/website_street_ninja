@@ -31,7 +31,8 @@ const NextStepsDesktop = () => {
           <TabPanels className="mt-10">
             {stepsData.map((step, index) => (
               <TabPanel key={step.title} className="transition-opacity duration-300">
-                <p className="text-lg text-slate-700">{step.text}</p>
+                {/* <p className="text-lg text-slate-700">{step.text}</p> */}
+                <step.component />
               </TabPanel>
             ))}
           </TabPanels>
