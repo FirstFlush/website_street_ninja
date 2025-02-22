@@ -1,4 +1,4 @@
-import { Smartphone, RefreshCw, Zap, Phone } from "lucide-react";
+import { Zap, Phone, Handshake } from "lucide-react";
 import { type ImageProps } from 'next/image'
 import screenshotContacts from '@/images/screenshots/contacts.png'
 import screenshotInventory from '@/images/screenshots/inventory.png'
@@ -6,37 +6,37 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 
 export interface Reason {
-  name: React.ReactNode
+  eyebrow: React.ReactNode
   summary: string
   description: string
   image: ImageProps['src']
   icon: React.ComponentType
 }
 
-export const reasons: Array<Reason> = [
+export const reasons: Reason[] = [
   {
-    name: 'No Apps Needed',
-    summary: 'Works via SMS, no downloads or accounts required.',
+    eyebrow: "No apps needed",
+    summary: "Works via SMS, no downloads or accounts required.",
     description:
-      'Anyone with a phone can use Street Ninja. No internet, no smartphone, and no app installation necessary—just text for help.',
+      "Not everyone has a smartphone with data, but many can access SMS. Street Ninja is designed with this in mind—offering a simple, accessible way to find help without needing an internet connection. Just text for help.",
     image: screenshotContacts,
     icon: Phone,
   },
   {
-    name: 'Real-Time Info',
-    summary: 'Always up-to-date resource availability.',
+    eyebrow: "Instant access to information",
+    summary: "Finding help shouldn’t be complicated.",
     description:
-      'Get the latest information on shelters, meals, and other services. No more guessing if a place is open or full—Street Ninja keeps it fresh.',
+      "Shelters, food, toilets—people shouldn’t have to wait on hold to find what they need. Street Ninja makes it easy to access essential resources anytime.",
     image: screenshotInventory,
-    icon: RefreshCw,
+    icon: Zap,
   },
   {
-    name: 'Fast & Simple',
-    summary: 'Short texts, no complicated menus or sign-ups.',
-    description:
-      'Find what you need instantly. Just send a quick message and get relevant results in seconds—no learning curve, no hassle.',
+    eyebrow: "Supporting existing services",
+    summary: "Handles simple inquiries, reducing pressure on 211.",
+    description: 
+      "211 is an essential service that handles a high volume of calls. Street Ninja provides fast, automated answers for everyday needs—freeing up 211’s resources for more complex situations.",
     image: screenshotProfitLoss,
-    icon: Zap,
+    icon: Handshake,
   },
 ];
 

@@ -28,9 +28,9 @@ const ReasonDiv = ({ reason, isActive, className, ...props }: ReasonDivProps) =>
           isActive ? 'text-primary-dark-10' : 'text-slate-600',
         )}
       >
-        {reason.name}
+        {reason.eyebrow}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">
+      <p className="mt-2 font-display text-lg text-slate-900">
         {reason.summary}
       </p>
       <p className="mt-4 text-sm text-slate-600">{reason.description}</p>

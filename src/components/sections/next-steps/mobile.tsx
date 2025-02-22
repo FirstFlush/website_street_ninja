@@ -9,9 +9,9 @@ const NextStepsMobile = () => {
         <React.Fragment key={step.title}>
           {index !== 0 && <Border />}
           <div className="flex items-start space-x-4">
-            <step.icon size={62} className="text-primary" />
+            {/* <step.icon size={62} className="text-primary" /> */}
             <div>
-              <h3 className="text-lg font-semibold text-foreground">{step.title}</h3>
+              {/* <h3 className="text-lg font-semibold text-foreground">{step.title}</h3> */}
               {/* <p className="mt-2 text-sm text-slate-700">{step.text}</p> */}
               <step.component />
             </div>

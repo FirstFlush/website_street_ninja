@@ -15,10 +15,10 @@ function ReasonsDesktop() {
                 key={reason.summary}
                 reason={{
                   ...reason,
-                  name: (
+                  eyebrow: (
                     <Tab className="data-selected:not-data-focus:outline-hidden">
                       <span className="absolute inset-0" />
-                      {reason.name}
+                      {reason.eyebrow}
                     </Tab>
                   ),
                 }}
