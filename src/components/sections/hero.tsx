@@ -1,23 +1,24 @@
 import clsx from 'clsx';
 import { Button } from '@/components/ui/Button'
-
+import { ArrowRightIcon } from 'lucide-react';
 
 const Hero = () => {
   return (
     <div
       className="relative h-[95svh] w-full"
       style={{
-        backgroundImage: "url('/images/bg-abstract-white2.jpg')",
+        backgroundImage: "url('/images/bg-abstract-white.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
         <div className="w-fit h-fit mx-auto my-auto pt-[72px]">
-
+          <h1 className="sm:hidden text-foreground mb-6 font-display text-5xl tracking-tight font-light">Street Ninja</h1>
           <h2 className={clsx(
             "mx-auto max-w-4xl font-display px-4 sm:px-0", 
-            "text-3xl font-light tracking-tight text-foreground sm:text-5xl",
+            "font-light tracking-tight text-foreground sm:text-5xl",
+            "text-xl sm:text-3xl"
           )}>
             An <span className="text-primary font-normal text-[115%] tracking-normal">SMS-powered</span> tool to connect vulnerable people with real help.
           </h2>
@@ -43,17 +44,12 @@ const Hero = () => {
           <div className="mt-10 flex justify-center gap-x-6">
             <Button href="#how-it-works">How it works</Button>
             <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="/try-it-out"
               variant="outline"
               className="group"
             >
-              <svg
-                aria-hidden="true"
-                className="h-3 w-3 group-hover:fill-primary-dark-10 transition-colors duration-300 flex-none fill-background-dark group-active:fill-current"
-              >
-                <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
-              </svg>
-              <span className="ml-3">Watch video</span>
+              <span className="mr-1">Try it out</span>
+              <ArrowRightIcon className="w-4 h-4 group-hover:text-primary-dark-10 transition-colors duration-300"/>
             </Button>
           </div>
         </div>

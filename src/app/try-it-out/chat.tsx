@@ -78,7 +78,7 @@ const ChatBox = () => {
       <MainContainer className="shadow-md rounded-md">
         <ChatContainer>
           <ConversationHeader>
-            <ConversationHeader.Content userName="Street Ninja Chat" info={ isLoading ? "typing..." : "Try it out"} />
+            <ConversationHeader.Content userName="Street Ninja SMS chat" info={ isLoading ? "typing..." : "Try it out"} />
           </ConversationHeader>
           <MessageList className="py-3">
             {messages.map((msg, idx) => (

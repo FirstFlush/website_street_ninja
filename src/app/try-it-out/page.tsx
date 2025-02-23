@@ -7,7 +7,7 @@ const TryItOut = () => {
 
     
     return (
-        <PageWrapper>
+        <PageWrapper bgImage="/images/bg-abstract-white2.jpg">
             <div className="flex my-8 sm:my-16 items-center md:items-start flex-col md:flex-row">
                 <ChatBox />
                 <ChatInfo />
