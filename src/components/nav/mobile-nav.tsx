@@ -9,6 +9,9 @@ import { Button } from '../ui/Button'
 import MobileNavIcon from './mobile-nav-icon'
 import MobileNavLink from './mobile-nav-link'
 import { MapPin, MessageCircle } from 'lucide-react'
+import Logo from '../special/logo'
+import Logotype from '../special/logotype'
+import Border from '../layout/border'
 
 const MobileNavigation = () => {
   return (
@@ -35,12 +38,14 @@ const MobileNavigation = () => {
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-background-dark/95 p-4 text-lg tracking-tight text-foreground-dark ring-1 shadow-xl ring-slate-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
             // className="fixed top-0 left-0 right-0 h-screen w-screen flex origin-top flex-col rounded-2xl bg-background-dark/95 p-4 text-lg tracking-tight text-foreground-dark ring-1 shadow-xl ring-slate-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
           >
+            <Logotype className="mb-6 mt-2" width={230} />
             <MobileNavLink href="#how-it-works" close={close}>How it works</MobileNavLink>
             <MobileNavLink href="/try-it-out" close={close}>Try it out</MobileNavLink>
             <MobileNavLink href="/map" close={close}>
               <MapPin height={20} width={20} className="inline-block align-text-bottom"/> <span className="ml-1">Map</span>           
             </MobileNavLink>
-            <hr className="m-2 border-slate-300/40" />
+            <hr className="m-2 mb-3 border-slate-300/40" />
+            {/* <Border invert={true} className="mt-4 mb-6"/> */}
             <MobileNavLink href="/contact" className="flex max-w-fit" close={close}>
               <Button variant="solid" color="primary">
                 <MessageCircle height={20} width={20}/>

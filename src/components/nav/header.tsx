@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/Button'
 import { Container } from '@/components/layout/container'
-import Logo from '@/components/logo'
+// import Logo from '@/components/logo'
+import Logo from '../special/logo'
 import { NavLink } from '@/components/nav/nav-link'
 import { MapPin, MessageCircle } from 'lucide-react'
 import MobileNavigation from './mobile-nav'
@@ -29,10 +30,11 @@ const Header = () => {
       }`}
     >
       <Container>
-        <nav className="relative z-50 flex justify-between py-4">
+        <nav className="relative z-50 flex justify-between py-3">
           <div className="flex items-center md:gap-x-12">
             <Link href="/" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              {/* <Logo className="h-10 w-auto" /> */}
+              <Logo />
             </Link>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-6">

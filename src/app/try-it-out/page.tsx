@@ -8,7 +8,6 @@ const TryItOut = () => {
     
     return (
         <PageWrapper>
-            
             <div className="flex my-8 sm:my-16 items-center md:items-start flex-col md:flex-row">
                 <ChatBox />
                 <ChatInfo />
