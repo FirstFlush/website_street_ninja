@@ -1,7 +1,8 @@
-import Link from "next/link"
-import { PopoverButton } from "@headlessui/react"
 import clsx from "clsx"
 import { useRouter, usePathname } from 'next/navigation'
+import { NavLink } from "./nav-link"
+import Link from "next/link"
+
 
 const MobileNavLink = ({ 
   href, 
@@ -21,10 +22,10 @@ const MobileNavLink = ({
     ? `/${href}`
     : href
 
+
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     close()
-    
     if (href.startsWith('#')) {
       if (window.location.pathname !== '/') {
         router.push('/')
@@ -42,20 +43,21 @@ const MobileNavLink = ({
   }
 
   return (
-    <PopoverButton 
-      as={Link} 
-      href={fullHref}
-      onClick={handleClick}
-      className={clsx(
-        'block w-full p-2',
-        'text-foreground-dark',
-        'active:text-primary',
-        'max-w-fit',
-        className
-      )}
-    >
-      {children}
-    </PopoverButton>
+    <div onClick={() => handleClick}>
+      <Link
+        onClick={handleClick}
+        href={fullHref}
+        className={clsx(
+          'block w-full p-2',
+          'text-foreground-dark',
+          'active:text-primary',
+          'max-w-fit',
+          className
+        )}
+      >
+        {children}
+      </Link>
+    </div>
   )
 }
 

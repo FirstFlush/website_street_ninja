@@ -9,13 +9,12 @@ const RootLayoutInner = ({ children }: { children: React.ReactNode }) => {
     return (
         <>
             <div 
-                // onClick={closeNavMenu}
+                onClick={closeNavMenu}
                 className={clsx(
                     expanded ? "block" : "hidden",
                     "bg-black/50",
-                    "fixed inset-0 z-400"
+                    "fixed inset-0 z-600"
             )}>
-                
             </div>
             {children}
         </>

@@ -2,23 +2,20 @@ import Link from 'next/link'
 import clsx from 'clsx'
 import { useRouter, usePathname } from 'next/navigation'
 
-export function NavLink({
-  href,
-  children,
-  className,
-}: {
-  href: string
-  children: React.ReactNode,
-  className?: string,
-}) {
+interface NavLinkProps extends React.ComponentPropsWithoutRef<'a'> {
+  children: React.ReactNode
+}
+
+
+export function NavLink({children, className, href="/", ...props}: NavLinkProps) {
   const router = useRouter();
   const pathname = usePathname();
-
   const fullHref = href.startsWith('#') && pathname !== '/' 
     ? `/${href}`
     : href
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  
     e.preventDefault()
     if (href.startsWith('#')) {
       if (window.location.pathname !== '/') {
@@ -45,6 +42,7 @@ export function NavLink({
         "text-foreground-dark hover:bg-background-dark/70 hover:text-white",
         "transition-colors duration-300",
         className,
+      {...props}
       )}
     >
       {children}

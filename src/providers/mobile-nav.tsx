@@ -20,7 +20,6 @@ export const MobileNavProvider = ({ children }: { children: React.ReactNode }) =
             {children}
         </MobileNavContext.Provider>
     )
-
 }
 
 export const useMobileNav = () => {

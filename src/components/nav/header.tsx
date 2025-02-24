@@ -6,9 +6,9 @@ import { Container } from '@/components/layout/container'
 import Logo from '../special/logo'
 import { NavLink } from '@/components/nav/nav-link'
 import { MapPin, MessageCircle } from 'lucide-react'
-import MobileNavigation from './mobile-nav'
 import { useMobileNav } from '@/providers/mobile-nav'
-
+import { Squash as Hamburger } from 'hamburger-react'
+import MobileNavigation from './mobile-nav'
 
 const Header = () => {
 
@@ -16,7 +16,6 @@ const Header = () => {
   const { expanded, toggleNavMenu, closeNavMenu } = useMobileNav()
 
   const handleClick = () => {
-    console.log(expanded)
     expanded && closeNavMenu()
   }
 
@@ -27,9 +26,10 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+  
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-500 transition-[background-color,backdrop-filter] duration-300 shadow-xl ${
+      className={`fixed top-0 left-0 w-full z-700 transition-[background-color,backdrop-filter] duration-300 shadow-xl ${
         isScrolled
           ? ' bg-background-dark/50 backdrop-blur-sm'
           : 'bg-background-dark/70'
@@ -55,12 +55,16 @@ const Header = () => {
                   <MessageCircle height={20} width={20}/><span className="ml-1">Contact</span>
               </Button> 
             </Link>               
-            <div className="-mr-1 md:hidden">
-              <MobileNavigation />
+            <div className="mr-1 md:hidden">
+              <Hamburger color="white" size={24} toggled={expanded} toggle={toggleNavMenu} />
             </div>
+            {/* <div className="-mr-1 md:hidden">
+              <MobileNavigation />
+            </div> */}
           </div>
         </nav>
       </Container>
+      <MobileNavigation />
     </header>
   )
 }
