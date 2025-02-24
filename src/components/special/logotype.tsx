@@ -4,7 +4,7 @@ interface LogotypeProps extends React.SVGProps<SVGSVGElement> {
   color?: string;
 }
 
-const Logotype: React.FC<LogotypeProps> = ({ width, color = "white", ...props }) => {
+const Logotype: React.FC<LogotypeProps> = ({ width, className, color = "white", ...props }) => {
   return (
     <svg
       width={width}
@@ -14,6 +14,7 @@ const Logotype: React.FC<LogotypeProps> = ({ width, color = "white", ...props })
       id="svg483"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      className={className}
       {...props}
     >
       <defs id="defs480" />

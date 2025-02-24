@@ -55,7 +55,7 @@ const Header = () => {
                   <MessageCircle height={20} width={20}/><span className="ml-1">Contact</span>
               </Button> 
             </Link>               
-            <div className="mr-1 md:hidden">
+            <div className="md:hidden">
               <Hamburger color="white" size={24} toggled={expanded} toggle={toggleNavMenu} />
             </div>
             {/* <div className="-mr-1 md:hidden">
