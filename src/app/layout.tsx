@@ -1,8 +1,9 @@
 import { type Metadata } from 'next'
 import { Inter, Lexend } from 'next/font/google'
 import Header from '@/components/nav/header'
+import Providers from './providers'
 import clsx from 'clsx'
-
+import RootLayoutInner from '@/components/layout/root-layout-inner'
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
@@ -27,11 +28,8 @@ const lexend = Lexend({
   variable: '--font-lexend',
 })
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children, }: {children: React.ReactNode}) {
+
   return (
     <html
       lang="en"
@@ -43,8 +41,12 @@ export default function RootLayout({
     >
       
       <body className="flex h-full flex-col">
-        <Header />
-        {children}
+        <Providers>
+          <Header />
+            <RootLayoutInner>
+              {children}
+            </RootLayoutInner>
+        </Providers>
       </body>
     </html>
   )

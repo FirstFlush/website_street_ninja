@@ -75,7 +75,7 @@ const ChatBox = () => {
   
   return (
     <div className="lg:px-0 px-4 relative h-[420px] md:h-[500px] w-[100%] max-w-[600px] min-w-[300px] md:min-w-[380px] my-0 mx-auto">
-      <MainContainer className="shadow-md rounded-md">
+      <MainContainer className="shadow-xl rounded-md">
         <ChatContainer>
           <ConversationHeader>
             <ConversationHeader.Content userName="Street Ninja SMS chat" info={ isLoading ? "typing..." : "Try it out"} />
