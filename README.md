@@ -1,6 +1,6 @@
 # Street Ninja Website
 
-This repository contains the **official website** for **Street Ninja**, an SMS-based tool designed to help people navigate life on the street in Vancouver, BC by providing real-time access to food, shelter, wifi, and other essential resources.
+This repository contains the **official website** for [**Street Ninja**](https://github.com/firstflush/street_ninja/), an SMS-based tool designed to help people navigate life on the street in Vancouver, BC by providing real-time access to food, shelter, wifi, and other essential resources.
 
 ## About
 
