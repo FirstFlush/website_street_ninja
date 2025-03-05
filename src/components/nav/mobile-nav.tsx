@@ -18,6 +18,7 @@ const MobileNavigation = () => {
             animate={expanded ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
             className={clsx(
+                expanded ? "block" : "hidden",
                 "z-1000 absolute inset-x-0 top-full mt-12 mx-3 min-[525px]:mx-auto max-w-[500px] flex flex-col origin-top",
                 "rounded-2xl bg-background-dark/95 p-4 text-lg tracking-tight text-foreground-dark",
                 "ring-1 shadow-xl ring-slate-900/5"

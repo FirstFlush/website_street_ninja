@@ -7,14 +7,12 @@ const Funding = () => {
         <Rocket size={32} className="text-primary-dark-10"/>
         <h2 className="text-xl font-semibold">Getting Off the Ground</h2>
       </div>
-
       <p className="my-8">
         Street Ninja is running on (mostly) free-tier everything—free geocoding tools,
         free map routing data, and discounted SMS services. It works, but it’s
         not ideal. With funding, we can make it <b>faster, smarter, and
         easier to use</b>.
       </p>
-
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="flex items-start gap-3">
           <MapPin size={18} className="text-primary-dark-10 flex-none"/>
@@ -34,7 +32,6 @@ const Funding = () => {
             </p>
           </div>
         </div>
-
         <div className="flex items-start gap-3">
           <MessageSquareIcon size={18} className="text-primary-dark-10 flex-none" />
           <div>
@@ -47,7 +44,6 @@ const Funding = () => {
           </div>
         </div>
       </div>
-
     </section>
   );
 }

@@ -21,7 +21,7 @@ const Logo = ({
 }: LogoProps) => {
 
     return (
-        <div className={clsx("flex items-baseline gap-x-3", className)} {...props}>
+        <div className={clsx("flex items-baseline gap-x-4", className)} {...props}>
             <Logomark color={colorLogomark} width={widthLogomark}/>
             <Logotype className="hidden md:block" color={colorLogotype} width={widthLogotype}/>
         </div>

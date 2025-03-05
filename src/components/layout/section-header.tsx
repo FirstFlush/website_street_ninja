@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { FadeIn } from "../visual/fade-in";
+// import { FadeIn } from "../visual/fade-in";
 
 interface SectionHeaderProps {
     title: string;
@@ -11,7 +11,7 @@ interface SectionHeaderProps {
 const SectionHeader = ({ title, subtitle, align="center", isDark = false }: SectionHeaderProps) => {
 
     return (
-        <FadeIn>
+        // <FadeIn>
             <div className={clsx(
                 "max-w-2xl md:mx-auto  xl:max-w-none",
                 `text-${align}`,
@@ -29,7 +29,7 @@ const SectionHeader = ({ title, subtitle, align="center", isDark = false }: Sect
                 </p>
                 }
             </div>
-        </FadeIn>
+        // </FadeIn>
     )
 }
 
