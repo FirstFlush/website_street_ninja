@@ -16,7 +16,7 @@ const NextStepsDesktop = () => {
                     "flex items-center space-x-4 px-6 py-4 rounded-lg cursor-pointer",
                     selectedIndex === index
                       ? "bg-primary-dark-10 text-white font-semibold"
-                      : "hover:bg-slate-100"
+                      : "bg-slate-200 hover:bg-slate-300"
                   )}
                 >
                   <step.icon size={32} className={clsx(
