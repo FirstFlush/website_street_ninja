@@ -18,9 +18,9 @@ export const faqsData = [
           'The service is free, but standard text message rates may apply depending on your phone plan.',
       },
       {
-        question: 'Where does your data come from?',
+        question: "Do I have to remember all the keywords like 'food' and 'shelter' in order to use it?",
         answer:
-          "Currently it is mostly pulled from the City of Vancouver's OpenData API. We also use GraphHopper and WiGLE APIs to help with direction routing and WiFi network mapping.",
+          "Kind of. Although each keyword has multiple fall-back words that are also acceptable. For example, 'breakfast' or 'meal' will wwork in place of 'food'. You can also just type 'help' to get information on which keywords you can search for."
       },
     ],
   },
@@ -35,12 +35,12 @@ export const faqsData = [
       {
         question: 'Where does the data come from?',
         answer:
-          'We gather data from city databases, nonprofits, and direct input from organizations that provide food, shelter, and other services.',
+          'Currently all data comes from the City of Vancouver OpenData API. We are looking to expand to other data sources, as we believe the more information we can get and the more resources we can connect people with, the more powerful Street Ninja will become.',
       },
       {
         question: 'Can I report incorrect or missing information?',
         answer:
-          'Yes! If you notice incorrect details, let us know so we can improve the accuracy of our data for everyone.',
+          "Yes, please do! If you notice incorrect details, let us know in the 'Contact' page so we can improve the accuracy of our data for everyone.",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const faqsData = [
       {
         question: 'How can I help improve Street Ninja?',
         answer:
-          'We need funding, better data sources, and outreach support. Also further testing of the app (hello developers!). If you can help in any of these areas, please reach out.',
+          'We need funding, more data sources, and outreach support. Also further testing of the app (hello developers!). If you can help in any of these areas, please reach out.',
       },
       {
         question: 'Will this service expand to more cities?',
