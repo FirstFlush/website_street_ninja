@@ -1,3 +1,4 @@
+'use client'
 import { Button } from "@/components/ui/Button"
 import { ArrowRightIcon } from 'lucide-react';
 import SectionHeader from "@/components/layout/section-header";

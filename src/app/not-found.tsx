@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/Button"
 import { ArrowRightIcon } from 'lucide-react';
 import SectionHeader from "@/components/layout/section-header";
-
+import PageWrapper from "@/components/layout/page-wrap";
 
 export default function NotFound() {
   return (
+    <PageWrapper bgImage="/images/bg-abstract-white3.jpg" className="bg-cover min-h-full bg-no-repeat">
       <div className="grid min-h-full sm:place-items-center px-6 py-44 sm:py-32 lg:px-8">
         <div className="text-center">
           <p className="text-xl font-semibold text-primary-dark-10 glitch">404</p>
@@ -30,6 +31,7 @@ export default function NotFound() {
           </div>
         </div>
     </div>
+    </PageWrapper>
   )
 }
 

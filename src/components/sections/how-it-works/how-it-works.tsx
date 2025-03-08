@@ -34,7 +34,7 @@ const HowItWorks = () => {
     >
       <BackgroundImage />
 
-      <Container className="relative">
+      <Container className="relative !px-0 lg:px-8">
         <SectionHeader 
           title="How it works"
           subtitle="Text for help. Get real-time info. Locate key services like food and

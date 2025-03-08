@@ -18,15 +18,15 @@ export const reasons: Reason[] = [
     eyebrow: "No apps needed",
     summary: "Works via SMS, no downloads or accounts required.",
     description:
-      "Not everyone has a smartphone with data, but many can access SMS. Street Ninja is designed with this in mind—offering a simple, accessible way to find help without needing an internet connection. Just text for help.",
+      "Finding food, shelter, and essentials shouldn’t be complicated. Street Ninja works via text, so there’s no need for an app, an account, or an internet connection. Just send a message and get help immediately.",
     image: screenshotContacts,
     icon: Phone,
   },
   {
-    eyebrow: "Instant access to information",
-    summary: "Finding help shouldn’t be complicated.",
+    eyebrow: "Help without stigma",
+    summary: "No judgment, no explaining—just answers",
     description:
-      "Shelters, food, toilets—people shouldn’t have to wait on hold to find what they need. Street Ninja makes it easy to access essential resources anytime.",
+      "Asking for help can be hard. Long waits, invasive questions, and judgmental attitudes can make it even harder. Street Ninja lets people find what they need on their own terms—privately, quickly, and without having to justify themselves to anyone.",
     image: screenshotInventory,
     icon: Zap,
   },

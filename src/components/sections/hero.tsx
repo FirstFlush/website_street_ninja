@@ -26,7 +26,7 @@ const Hero = () => {
             Real-time access to food, shelter, wifi, and other essential resources—fast, simple, and judgment-free.
           </p>
           <div className="mt-10 flex justify-center gap-x-6">
-            <Button href="#how-it-works">How it works</Button>
+            <Button href="#how-it-works" color="primary">How it works</Button>
             <Button
               href="/try-it-out"
               variant="outline"

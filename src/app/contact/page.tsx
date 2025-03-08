@@ -18,7 +18,11 @@ const ContactPage = () => {
                             subtitle="Questions, feedback, or interested in collaborating? Fill out the form below and we’ll get back to you as soon as possible!"
                             align="left"
                         />
-                        <div className="mt-4 text-[85%]">Hate forms? Email us instead at <a href={`mailto:${CONTACT_EMAIL}`} className="link">{CONTACT_EMAIL}</a></div>
+                        <div className="mt-6 text-[85%]">
+                            <div>Do you hate web forms?</div>
+                            <div>Email us instead at <a href={`mailto:${CONTACT_EMAIL}`} className="link">{CONTACT_EMAIL}</a></div>
+    
+                        </div>
                         
                         {/* <div className="relative py-8">
                             <div className="absolute top-0">

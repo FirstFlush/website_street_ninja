@@ -62,21 +62,27 @@ const Tabs = ({ tabOrientation }: TabsProps) => {
                       </p>
                     </div>
 
-                    <div className=" overflow-hidden rounded-xl lg:shadow-xl shadow-gray-900/20 sm:w-[100%] lg:mt-0 lg:w-[67.8125rem]">
-                      <Conversation 
-                        messages={standardQuery}
-                      />
-                    </div>
+                    <div 
+                      className={clsx(
+                        "py-12 lg:py-0",
+                        "relative mt-10 lg:mt-0",
+                        "w-full lg:w-[67.8125rem]",
+                        "overflow-hidden rounded-xl",
+                        "bg-slate-50 bg-[url('/images/bg-abstract-red.webp')] bg-cover bg-center",
+                        "shadow-xl shadow-red-900/20"
+                      )}
+                    >
 
-                    {/* <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
-                        className="w-full"
-                        src={tab.image}
-                        alt=""
-                        priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
-                    </div> */}
+                      <div className="h-[30rem] lg:h-[44rem] flex items-center justify-center">
+                        <Image
+                          className="w-[20rem] lg:w-[22rem] mx-auto lg:ml-24"
+                          src={tab.image}
+                          alt=""
+                          priority
+                          sizes="(min-width: 1024px) 22rem, (min-width: 640px) 60vw, 80vw"
+                        />
+                      </div>
+                    </div>
                   </TabPanel>
                 ))}
               </TabPanels>
