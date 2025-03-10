@@ -1,6 +1,4 @@
-import Image from 'next/image'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import clsx from 'clsx'
+import { Tab, TabGroup, TabList } from '@headlessui/react'
 import { reasons } from './reasons'
 import ReasonDiv from './reason-div'
 
@@ -22,12 +20,13 @@ function ReasonsDesktop() {
                     </Tab>
                   ),
                 }}
-                isActive={reasonIndex === selectedIndex}
+                isActive
+                // isActive={reasonIndex === selectedIndex}
                 className="relative"
               />
             ))}
           </TabList>
-          <TabPanels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          {/* <TabPanels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {reasons.map((reason, reasonIndex) => (
                 <TabPanel
@@ -40,19 +39,19 @@ function ReasonsDesktop() {
                   style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
                   aria-hidden={reasonIndex !== selectedIndex}
                 >
-                  {/* <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white ring-1 shadow-lg shadow-slate-900/5 ring-slate-500/10">
+                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white ring-1 shadow-lg shadow-slate-900/5 ring-slate-500/10">
                     <Image
                       className="w-full"
                       src={reason.image}
                       alt=""
                       sizes="52.75rem"
                     />
-                  </div> */}
+                  </div>
                 </TabPanel>
               ))}
             </div>
             <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-slate-900/10 ring-inset" />
-          </TabPanels>
+          </TabPanels> */}
         </>
       )}
     </TabGroup>

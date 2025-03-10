@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import { faqsData } from './faqData'
 import { Container } from '@/components/layout/container'
-// import backgroundImage from '@/images/background-faqs.jpg'
 import Border from '@/components/layout/border'
-import backgroundImage from '@/images/blood-bg.jpg'
+import backgroundImage from '@/images/bg/blood-bg.jpg'
 import SectionHeader from '@/components/layout/section-header'
 
 

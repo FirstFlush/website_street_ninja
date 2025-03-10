@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import backgroundImage from '@/images/background-call-to-action.jpg'
+import backgroundImage from '@/images/bg/background-call-to-action.jpg'
 
 
 const BackgroundImage = () => {

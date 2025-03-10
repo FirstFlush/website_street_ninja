@@ -3,8 +3,6 @@ import { SlimLayout } from "@/components/layout/slim-layout";
 import Footer from "@/components/nav/footer";
 import SectionHeader from "@/components/layout/section-header";
 import { CONTACT_EMAIL } from "@/data/contact";
-import CopyToClipboard from "@/components/special/copy-to-clipboard";
-
 
 const ContactPage = () => {
 
