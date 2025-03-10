@@ -1,15 +1,15 @@
 import { Zap, Phone, Handshake } from "lucide-react";
 import { type ImageProps } from 'next/image'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+// import screenshotContacts from '@/images/screenshots/contacts.png'
+// import screenshotInventory from '@/images/screenshots/inventory.png'
+// import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 
 export interface Reason {
   eyebrow: React.ReactNode
   summary: string
   description: string
-  image: ImageProps['src']
+  // image: ImageProps['src']
   icon: React.ComponentType
 }
 
@@ -19,7 +19,7 @@ export const reasons: Reason[] = [
     summary: "Works via SMS, no downloads or accounts required.",
     description:
       "Finding food, shelter, and essentials shouldn’t be complicated. Street Ninja works via text, so there’s no need for an app, an account, or an internet connection. Just send a message and get help immediately.",
-    image: screenshotContacts,
+    // image: screenshotContacts,
     icon: Phone,
   },
   {
@@ -27,7 +27,7 @@ export const reasons: Reason[] = [
     summary: "No judgment, no explaining—just answers",
     description:
       "Asking for help can be hard. Long waits, invasive questions, and judgmental attitudes can make it even harder. Street Ninja lets people find what they need on their own terms—privately, quickly, and without having to justify themselves to anyone.",
-    image: screenshotInventory,
+    // image: screenshotInventory,
     icon: Zap,
   },
   {
@@ -35,7 +35,7 @@ export const reasons: Reason[] = [
     summary: "Handles simple inquiries, reducing pressure on 211.",
     description: 
       "211 is an essential service that handles a high volume of calls. Street Ninja provides fast, automated answers for everyday needs—freeing up 211’s resources for more complex situations.",
-    image: screenshotProfitLoss,
+    // image: screenshotProfitLoss,
     icon: Handshake,
   },
 ];

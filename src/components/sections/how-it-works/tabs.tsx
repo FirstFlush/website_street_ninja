@@ -73,9 +73,9 @@ const Tabs = ({ tabOrientation }: TabsProps) => {
                       )}
                     >
 
-                      <div className="h-[30rem] lg:h-[44rem] flex items-center justify-center">
+                      <div className="h-[36rem] lg:h-[41rem] flex items-center justify-center">
                         <Image
-                          className="w-[20rem] lg:w-[22rem] mx-auto lg:ml-24"
+                          className="w-[20rem] lg:w-[20rem] mx-auto lg:ml-24"
                           src={tab.image}
                           alt=""
                           priority

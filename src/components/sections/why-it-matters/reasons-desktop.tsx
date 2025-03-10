@@ -40,14 +40,14 @@ function ReasonsDesktop() {
                   style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
                   aria-hidden={reasonIndex !== selectedIndex}
                 >
-                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white ring-1 shadow-lg shadow-slate-900/5 ring-slate-500/10">
+                  {/* <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white ring-1 shadow-lg shadow-slate-900/5 ring-slate-500/10">
                     <Image
                       className="w-full"
                       src={reason.image}
                       alt=""
                       sizes="52.75rem"
                     />
-                  </div>
+                  </div> */}
                 </TabPanel>
               ))}
             </div>
