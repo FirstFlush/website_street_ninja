@@ -52,7 +52,7 @@ const Awareness = () => {
             <h3 className="font-medium">Developers & Tech Contributors</h3>
             <p className="text-neutral-700 text-sm">
               If you’re a developer who wants to help, check out the GitHub repo for 
-              ways to contribute: <a href="#" className="text-primary-dark-10 font-medium">CONTRIBUTING.md</a>.
+              ways to contribute: <a href="https://github.com/FirstFlush/street_ninja/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="text-primary-dark-10 font-medium">CONTRIBUTING.md</a>.
             </p>
           </div>
         </div>
