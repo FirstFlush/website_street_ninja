@@ -41,24 +41,3 @@ const ContactPage = () => {
 }
 
 export default ContactPage;
-// const ContactPage = () => {
-
-//     return (
-//         <SlimLayout
-//             className=""
-//             style={{
-//                 backgroundImage: "url('/images/bg-abstract-white.jpg')",
-//                 backgroundSize: "cover",
-//                 backgroundPosition: "center",
-//               }}
-//         >
-//             <div className="mt-24">
-//                 <ContactForm />
-//             </div>
-            
-//         </SlimLayout>
-        
-//     )
-// }
-
-// export default ContactPage;

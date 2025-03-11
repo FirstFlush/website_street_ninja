@@ -31,7 +31,7 @@ const Tabs = ({ tabOrientation }: TabsProps) => {
                       )}
                     >
                       <h3>
-                        <CustomTab 
+                        <CustomTab
                           tab={tab}
                           tabIndex={tabIndex}
                           selectedIndex={selectedIndex}
@@ -77,7 +77,8 @@ const Tabs = ({ tabOrientation }: TabsProps) => {
                           className="w-[20rem] lg:w-[20rem] mx-auto lg:ml-24"
                           src={tab.image}
                           alt=""
-                          priority
+                          // priority
+                          loading="lazy"
                           sizes="(min-width: 1024px) 22rem, (min-width: 640px) 60vw, 80vw"
                         />
                       </div>

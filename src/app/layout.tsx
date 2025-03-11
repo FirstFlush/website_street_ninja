@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { type Metadata } from 'next'
 import { Inter, Lexend } from 'next/font/google'
 import Header from '@/components/nav/header'
@@ -39,7 +40,11 @@ export default function RootLayout({ children, }: {children: React.ReactNode}) {
         lexend.variable,
       )}
     >
-      
+      <Head>
+        <title>Street Ninja</title>
+        <meta name="description" content={metadata.description ?? ""} />
+        <link rel="preload" as="image" href="/images/bg-abstract-white.webp" type="image/webp" />
+      </Head>
       <body className="flex h-full flex-col">
         <Providers>
           <Header />

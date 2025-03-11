@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import backgroundPattern from '@/images/bg/white-abstract.jpg'
+import backgroundPattern from '@/images/bg/white-abstract.webp'
 
 export function SlimLayout({ children }: { children: React.ReactNode }) {
   return (

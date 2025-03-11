@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import backgroundImage from '@/images/bg/background-call-to-action.jpg'
+import backgroundImage from '@/images/bg/background-call-to-action.webp'
 
 
 const BackgroundImage = () => {
@@ -11,7 +11,8 @@ const BackgroundImage = () => {
             alt=""
             width={2347}
             height={1244}
-            unoptimized
+            // unoptimized
+            loading="lazy"
         />
     )
 }
