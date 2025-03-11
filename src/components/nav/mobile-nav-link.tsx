@@ -1,6 +1,5 @@
 import clsx from "clsx"
 import { useRouter, usePathname } from 'next/navigation'
-import { NavLink } from "./nav-link"
 import Link from "next/link"
 
 

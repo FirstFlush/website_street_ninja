@@ -1,5 +1,4 @@
 import clsx from "clsx";
-// import { FadeIn } from "../visual/fade-in";
 
 interface SectionHeaderProps {
     title: string;

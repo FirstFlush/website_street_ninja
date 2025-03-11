@@ -3,8 +3,7 @@ import Image from 'next/image'
 import { TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { tabs } from './tabsData'
 import CustomTab from './tab'
-import Conversation from '@/components/chat/conversation'
-import { standardQuery } from '@/data/chatData'
+
 
 interface TabsProps {
     tabOrientation: 'horizontal' | 'vertical'
