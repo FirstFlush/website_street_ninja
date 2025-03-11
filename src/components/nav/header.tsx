@@ -31,8 +31,10 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 w-full z-700 transition-[background-color,backdrop-filter] duration-300 shadow-xl ${
         isScrolled
-          ? ' bg-background-dark/50 backdrop-blur-sm'
-          : 'bg-background-dark/70'
+          // ? ' bg-background-dark/50 backdrop-blur-sm'
+          // : 'bg-background-dark/70'
+          ? 'bg-[rgba(34,34,34,0.5)] backdrop-blur-sm'
+          : 'bg-[rgba(34,34,34,0.7)]'
       }`}
     >
       <Container>
@@ -50,11 +52,11 @@ const Header = () => {
                 <MapPin className="inline-block align-text-bottom" height={20} width={20} /><span className="ml-1">Map</span>
               </NavLink>
             </div>
-            <Link href="/contact">
-              <Button variant="solid" color="primary">
+            {/* <Link href="/contact" className="focus:outline-0 focus:bg-black"> */}
+              <Button href="/contact" variant="solid" color="primary">
                   <MessageCircle height={20} width={20}/><span className="ml-1">Contact</span>
               </Button> 
-            </Link>               
+            {/* </Link>                */}
             <div className="md:hidden">
               <Hamburger color="white" size={24} toggled={expanded} toggle={toggleNavMenu} />
             </div>

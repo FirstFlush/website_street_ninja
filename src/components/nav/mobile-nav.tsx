@@ -20,7 +20,7 @@ const MobileNavigation = () => {
             className={clsx(
                 expanded ? "block" : "hidden",
                 "z-1000 absolute inset-x-0 top-full mt-12 mx-3 min-[525px]:mx-auto max-w-[500px] flex flex-col origin-top",
-                "rounded-2xl bg-background-dark/95 p-4 text-lg tracking-tight text-foreground-dark",
+                "rounded-2xl bg-[rgba(34,34,34,0.95)] p-4 text-lg tracking-tight text-foreground-dark",
                 "ring-1 shadow-xl ring-slate-900/5"
             )}
         >
@@ -31,10 +31,13 @@ const MobileNavigation = () => {
                 <MapPin height={20} width={20} className="inline-block align-text-bottom"/> <span className="ml-1">Map</span>           
             </MobileNavLink>
             <hr className="m-2 mb-3 border-slate-300/40" />
-            <MobileNavLink href="/contact" className="flex max-w-fit" close={closeNavMenu}>
-                <Button variant="solid" color="primary">
-                <MessageCircle height={20} width={20}/>
-                <span className="ml-1">Contact</span>
+            <MobileNavLink href="/contact" className="group flex max-w-fit" close={closeNavMenu}>
+                <Button variant="solid" color="primary" className={clsx(
+                    "group-hover:bg-black  group-active:bg-black", 
+                    "group-focus:outline-primary-dark-10 group-focus:outline-offset-2 group-focus:bg-black group-focus:outline-2",
+                )}>
+                    <MessageCircle height={20} width={20}/>
+                    <span className="ml-1">Contact</span>
                 </Button>
             </MobileNavLink>
         </motion.div>

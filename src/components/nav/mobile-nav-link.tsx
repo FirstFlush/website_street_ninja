@@ -50,6 +50,9 @@ const MobileNavLink = ({
           'block w-full p-2',
           'text-foreground-dark',
           'active:text-primary',
+          'hover:text-primary focus:text-primary active:text-primary',
+          'focus:outline-0',
+          'transition-colors duration-300',
           'max-w-fit',
           className
         )}

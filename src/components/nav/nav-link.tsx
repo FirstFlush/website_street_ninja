@@ -39,7 +39,9 @@ export function NavLink({children, className, href="/", ...props}: NavLinkProps)
       onClick={handleClick}
       className={clsx(
         "inline-block rounded-full px-4 py-2 text-md",
-        "text-foreground-dark hover:bg-background-dark/70 hover:text-white",
+        "text-foreground-dark hover:text-white",
+        "hover:bg-[rgba(34,34,34,0.7)] focus:bg-[rgba(34,34,34,0.7)] active:bg-[rgba(34,34,34,0.7)]",
+        "focus:outline-0",
         "transition-colors duration-300",
         className,
       {...props}

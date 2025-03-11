@@ -5,13 +5,13 @@ const baseStyles = {
   solid:
     'select-none group inline-flex cursor-pointer transition-colors duration-300 items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2',
   outline:
-    'select-none group inline-flex cursor-pointer transition-colors duration-300 ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-hidden focus:ring-primary focus:text-primary',
+    'select-none group inline-flex cursor-pointer transition-colors duration-300 ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-hidden focus:ring-primary focus:text-primary focus-visible:outline-offset-2 focus-visible:outline-2',
 }
 
 const variantStyles = {
   solid: {
     primary:
-      'bg-primary-dark-10 text-white hover:bg-background-dark hover:text-foreground-dark active:bg-primary-light-10 focus-visible:outline-primary-dark-20',
+      'bg-primary-dark-10 text-white hover:bg-black hover:text-white active:bg-black focus:bg-black focus-visible:outline-primary-dark-20',
     slate:
       'bg-background-dark text-foreground-dark hover:bg-primary-dark-10 hover:text-white active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
     blue: 'bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600',
@@ -20,7 +20,7 @@ const variantStyles = {
   },
   outline: {
     slate:
-      'ring-foreground text-foreground hover:text-primary-dark-10 hover:ring-primary-dark-10 active:bg-primary-light-10 active:bg-primary-light-10 focus-visible:outline-primary-light-10',
+      'ring-foreground text-foreground hover:text-primary-dark-10 hover:ring-primary-dark-10 active:bg-primary-light-10 active:bg-primary-light-10 focus-visible:outline-primary-light-10 ',
     white:
       'ring-white/70 duration-300 text-foreground-dark hover:text-primary hover:ring-primary-dark-10 active:ring-primary active:text-primary-dark-10 focus-visible:outline-primary-light-10',
   },
