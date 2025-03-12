@@ -37,13 +37,13 @@ const Faqs = () => {
                 {column.header}
               </h3>
               <Border />
-              <ul>
+              <ul className="mb-[-48px]">
                 {column.data.map((faq, faqIndex) => (
                   <li key={faqIndex}>
                     <h4 className="font-display text-lg/7 text-slate-900">
                       {faq.question}
                     </h4>
-                    <p className="mt-4 text-sm text-slate-700">{faq.answer}</p>
+                    <p className="mt-2 sm:mt-4 mb-12 text-sm text-slate-700">{faq.answer}</p>
                   </li>
                 ))}
               </ul>

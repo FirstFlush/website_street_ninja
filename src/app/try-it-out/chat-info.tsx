@@ -1,14 +1,17 @@
-import { Search, Home, Droplet, ShowerHead, Wifi, ArrowRight } from "lucide-react";
+import { MessagesSquare, ArrowRight } from "lucide-react";
 import { keywords } from "@/data/keywords";
 import Border from "@/components/layout/border";
 
 const ChatInfo = () => {
   return (
     <div className="max-w-lg mx-auto text-foreground lg:px-0 px-4 pt-8 sm:pt-12 md:pt-0 ">
-      <h2 className="text-xl font-semibold text-primary-dark-10">Try Street Ninja</h2>
+      <h2 className="text-xl font-semibold text-primary-dark-10 flex items-center gap-3">
+        <MessagesSquare />
+        <span>Try Street Ninja</span>
+      </h2>
       <p className="text-sm">
-        This chat lets you explore the Street Ninja SMS service <span className="font-bold">right from your browser</span>.  
-        Search for resources near you, just like you would in a text message.
+          This chat lets you explore the Street Ninja SMS service <span className="font-bold">right from your browser</span>.  
+          Search for resources near you, just like you would in a text message.
       </p>
 
       <Border className="my-8"/>
