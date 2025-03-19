@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   icons: "/images/favicon.ico",
   description:
     "Street Ninja helps people navigate street life with real-time access to food, shelter, wifi, and other resources—fast, simple, and judgment-free.",
+    robots: {
+      index: true,
+      follow: true,
+    },
 }
 
 const inter = Inter({
