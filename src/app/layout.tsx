@@ -9,7 +9,7 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Street Ninja',
+    template: '%s | Street Ninja',
     default: 'Street Ninja',
   },
   icons: "/images/favicon.ico",
