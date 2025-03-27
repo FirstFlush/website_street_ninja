@@ -20,7 +20,7 @@ export const faqsData = [
       {
         question: "Do I have to remember all the keywords like 'food' and 'shelter' in order to use it?",
         answer:
-          "Kind of. Although each keyword has multiple fall-back words that are also acceptable. For example, 'breakfast' or 'meal' will wwork in place of 'food'. You can also just type 'help' to get information on which keywords you can search for."
+          "Kind of. Although each keyword has multiple fall-back words that are also acceptable. For example, 'breakfast' or 'meal' will work in place of 'food'. You can also just type 'help' to get information on which keywords you can search for."
       },
     ],
   },
