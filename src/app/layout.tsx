@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import { type Metadata } from 'next'
+import { type Metadata, Viewport } from 'next'
 import { Inter, Lexend } from 'next/font/google'
 import Header from '@/components/nav/header'
 import Providers from './providers'
 import clsx from 'clsx'
 import RootLayoutInner from '@/components/layout/root-layout-inner'
 import '@/styles/tailwind.css'
+import GoogleAnalytics from './google-analytics'
 
 export const metadata: Metadata = {
   title: {
@@ -20,6 +20,12 @@ export const metadata: Metadata = {
       follow: true,
     },
 }
+
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: "device-width",
+}
+
 
 const inter = Inter({
   subsets: ['latin'],
@@ -44,12 +50,8 @@ export default function RootLayout({ children, }: {children: React.ReactNode}) {
         lexend.variable,
       )}
     >
-      <Head>
-        <title>Street Ninja</title>
-        <meta name="description" content={metadata.description ?? ""} />
-        <link rel="preload" as="image" href="/images/bg-abstract-white.webp" type="image/webp" />
-      </Head>
       <body className="flex h-full flex-col">
+        { process.env.NODE_ENV === 'production' && <GoogleAnalytics /> }
         <Providers>
           <Header />
             <RootLayoutInner>
