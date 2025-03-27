@@ -26,7 +26,8 @@ const Tabs = ({ tabOrientation }: TabsProps) => {
                       className={clsx(
                         'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
                         selectedIndex === tabIndex
-                          ? 'bg-background-dark/40 lg:bg-white/10 lg:ring-1 lg:ring-white/10 lg:ring-inset'
+                          // ? 'bg-background-dark/40 lg:bg-white/10 lg:ring-1 lg:ring-white/10 lg:ring-inset'
+                          ? 'bg-[#3b3b3b] lg:bg-white/10 lg:ring-1 lg:ring-white/10 lg:ring-inset'
                           : 'hover:bg-white/10 lg:hover:bg-white/5',
                       )}
                     >

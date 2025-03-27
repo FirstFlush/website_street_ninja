@@ -20,7 +20,7 @@ const CustomTab = ({ tab, tabIndex, selectedIndex }: CustomTabProps) => {
                 : 'text-blue-100 hover:text-white lg:text-white',
             )}
         >
-            <span className="hidden sm:block absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
+            <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
             <div className="flex items-center">
                 <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary text-white">
                     <tab.icon
