@@ -9,7 +9,7 @@ const TryItOut = () => {
     
     return (
         <PageWrapper bgImage="/images/bg-abstract-white2.webp">
-            <Container className="flex my-8 sm:my-16 !px-0 items-center md:items-start flex-col md:flex-row">
+            <Container className="flex my-8 sm:my-16 !px-0 items-center md:items-start flex-col md:flex-row touch-manipulation">
                 <ChatBox />
                 <ChatInfo />
             </Container>
