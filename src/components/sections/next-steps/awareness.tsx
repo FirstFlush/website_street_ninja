@@ -1,10 +1,11 @@
 import { Megaphone, Users, GitBranch, HeartHandshakeIcon } from "lucide-react";
+import ContentIcon from "@/components/ui/content-icon";
 
 const Awareness = () => {
   return (
     <section>
       <div className="flex items-center gap-3">
-        <Megaphone size={32} className="text-primary-dark-10"/>
+        <ContentIcon icon={Megaphone} />
         <h2 className="text-xl font-semibold">Getting the Word Out</h2>
       </div>
 

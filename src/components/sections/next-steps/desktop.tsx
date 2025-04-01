@@ -13,10 +13,10 @@ const NextStepsDesktop = () => {
               <Tab key={step.title} className="focus:outline-none">
                 <div
                   className={clsx(
-                    "flex items-center space-x-4 px-6 py-4 rounded-lg cursor-pointer",
+                    "flex items-center space-x-4 px-6 py-4 rounded-lg cursor-pointer ",
                     selectedIndex === index
-                      ? "bg-primary-dark-10 text-white font-semibold"
-                      : "bg-slate-200 hover:bg-slate-300"
+                      ? "bg-primary-dark-10 text-white font-semibold shadow-lg"
+                      : "bg-slate-200 hover:bg-slate-300 shadow-md"
                   )}
                 >
                   <step.icon size={32} className={clsx(

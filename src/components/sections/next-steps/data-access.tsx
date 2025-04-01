@@ -1,10 +1,11 @@
 import { Database, Home, HeartPulse } from "lucide-react";
+import ContentIcon from "@/components/ui/content-icon";
 
 const DataAccess = () => {
   return (
     <section>
       <div className="flex items-center gap-3">
-        <Database size={32} className="text-primary-dark-10" />
+        <ContentIcon icon={Database} />
         <h2 className="text-xl font-semibold">Expanding Data Access</h2>
       </div>
 

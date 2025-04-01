@@ -1,10 +1,11 @@
 import { MessageSquareIcon, MapPin, Phone, Rocket } from "lucide-react";
+import ContentIcon from "@/components/ui/content-icon";
 
 const Funding = () => {
   return (
     <section>
       <div className="flex items-center gap-3">
-        <Rocket size={32} className="text-primary-dark-10"/>
+        <ContentIcon icon={Rocket} />
         <h2 className="text-xl font-semibold">Getting Off the Ground</h2>
       </div>
       <p className="my-8">

@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import { Reason } from "./reasons"
-
+import ContentIcon from "@/components/ui/content-icon"
 
 interface ReasonDivProps extends React.ComponentPropsWithoutRef<'div'> {
   reason: Reason
@@ -13,15 +13,7 @@ const ReasonDiv = ({ reason, isActive, className, ...props }: ReasonDivProps) =>
       className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
       {...props}
     >
-      <div
-        className={clsx(
-          'inline-flex items-center justify-center w-10 h-10 rounded-lg',
-          'text-white',
-          isActive ? 'bg-primary-dark-10' : 'bg-slate-500',
-        )}
-      >
-          <reason.icon />
-      </div>
+      <ContentIcon icon={reason.icon} />
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
