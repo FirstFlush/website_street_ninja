@@ -14,7 +14,7 @@ const Hero = () => {
     >
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
         <div className="w-fit h-fit mx-auto my-auto pt-[72px]">
-          <h1 className="sm:hidden text-foreground mb-6 font-display text-5xl tracking-tight font-light">Street Ninja</h1>
+          <h1 className="lg:hidden md:text-6xl text-foreground mb-6 font-display text-5xl tracking-tight font-light">Street Ninja</h1>
           <h2 className={clsx(
             "mx-auto max-w-4xl font-display px-4 sm:px-0", 
             "font-light tracking-tight text-foreground sm:text-5xl",
