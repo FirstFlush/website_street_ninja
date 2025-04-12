@@ -1,6 +1,6 @@
 
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://streetninja.ca/api"
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.streetninja.ca"
 
 export const API_ROUTES = {
     contact: `${API_BASE_URL}/contact/`,
