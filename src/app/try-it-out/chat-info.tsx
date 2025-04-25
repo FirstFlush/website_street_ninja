@@ -1,14 +1,16 @@
 import { MessagesSquare, ArrowRight } from "lucide-react";
 import { keywords } from "@/data/keywords";
+import ContentIcon from "@/components/ui/content-icon";
 import Border from "@/components/layout/border";
 
 const ChatInfo = () => {
   return (
     <div className="max-w-lg mx-auto text-foreground lg:px-0 px-4 pt-8 sm:pt-12 md:pt-0 ">
-      <h2 className="text-xl font-semibold text-primary-dark-10 flex items-center gap-3">
-        <MessagesSquare />
+      <h3 className="text-lg font-display t-medium flex items-center gap-3 mb-6">
+        {/* <MessagesSquare /> */}
+        <ContentIcon icon={MessagesSquare} />
         <span>Try Street Ninja</span>
-      </h2>
+      </h3>
       <p className="text-sm">
           This chat lets you explore the Street Ninja SMS service <span className="font-bold">right from your browser</span>.  
           Search for resources near you, just like you would in a text message.

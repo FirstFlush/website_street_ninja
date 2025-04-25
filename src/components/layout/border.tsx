@@ -21,7 +21,7 @@ export default function Border<T extends React.ElementType = 'div'>({
     <Component
       className={clsx(
         className,
-        'relative before:absolute after:absolute h-px', // ✅ Add this
+        'relative before:absolute after:absolute h-px',
         invert
           ? 'before:bg-white after:bg-white/10'
           : 'before:bg-neutral-950 after:bg-neutral-950/10',

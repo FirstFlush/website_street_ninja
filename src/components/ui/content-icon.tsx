@@ -7,7 +7,6 @@ interface ContentIconProps {
 
 const ContentIcon = ({ icon: Icon, className }: ContentIconProps) => {
 
-
     return (
         <div
             className={clsx(
