@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic"
 import { MapData } from "@/types/MapData"
 import { useState, useEffect } from "react"
-import { fetchResources } from "@/api/resources"
+import { fetchMapData } from "@/api/resources"
 import { Loader, AlertCircle } from "lucide-react"
 
 const Map = dynamic(() => import("@/app/map/map"), { ssr: false })
@@ -15,8 +15,13 @@ const MapWrapper = () => {
   useEffect(() => {
     async function loadResources() {
       try {
-        const data = await fetchResources()
-        setMapData(data)
+        const res = await fetchMapData()
+        if (res.data) {
+          setMapData(res.data)
+        }
+        else {
+          setError("Failed to load map data. Please try again later.")
+        }
       } catch (err) {
         setError("Failed to load map data. Please try again later.")
       } finally {
@@ -46,7 +51,7 @@ const MapWrapper = () => {
 
   if (!mapData) {
     return (
-      <div className="flex flex-col items-center justify-center h-64 text-gray-500">
+      <div className="flex mt-[10rem] flex-col items-center justify-center h-64 text-gray-500">
         <p className="text-lg">No map data available.</p>
       </div>
     )

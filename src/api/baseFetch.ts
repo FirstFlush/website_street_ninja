@@ -12,32 +12,31 @@
  * 
  * @throws {Error} - If the fetch request fails or times out.
  */
-export const baseFetch = async (
+
+
+export async function baseFetch<T>(
     url: string,
     config: RequestInit = {},
     timeout: number = 8000
-) => {
+  ): Promise<T> {
     const controller = new AbortController();
     const id = setTimeout(() => controller.abort(), timeout);
-    
+  
     try {
-        const response = await fetch(url, {
-            ...config,
-            signal: controller.signal,
-        });
-
-        clearTimeout(id);
-
-        if (!response.ok) {
-            throw new Error(`API error: ${response.status} ${response.statusText}`);
-        }
-        const data = await response.json()
-        return {
-            "data": data,
-            "success": true,
-        }
+      const response = await fetch(url, {
+        ...config,
+        signal: controller.signal,
+      });
+  
+      clearTimeout(id);
+  
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status} ${response.statusText}`);
+      }
+  
+      return await response.json(); // type will be inferred as T
     } catch (error) {
-        console.error("Fetch Error:", error);
-        throw error;
+      throw error; // let the calling code decide how to handle failure
     }
-};
+  }
+  

@@ -3,7 +3,6 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { keywords } from '@/data/keywords'
 import { fetchMapPinSingle } from '@/api/resources'
-import clsx from 'clsx'
 
 interface PopoverContentProps {
   id: number
@@ -17,8 +16,11 @@ const PopoverContent = ({ id, resourceType }: PopoverContentProps) => {
   useEffect(() => {
     async function loadMapData() {
       try {
-        const data = await fetchMapPinSingle(resourceType, id);
-        setPopoverData(data)
+        const res = await fetchMapPinSingle(resourceType, id);
+        
+        if (res.data){
+          setPopoverData(res.data)
+        }
       }
       catch (err) {
         console.log(err);

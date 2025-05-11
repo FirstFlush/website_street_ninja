@@ -1,11 +1,11 @@
 import { API_ROUTES } from "@/config/apiRoutes";
 import { baseFetch } from "./baseFetch";
-
+import { ApiResponse } from "@/types/apiResponse";
 
 export const submitContactForm = async (data: any) => {
 
     try {
-        return await baseFetch(
+        return await baseFetch<ApiResponse<void>>(
             API_ROUTES.contact,
             {
                 method: "POST",

@@ -57,7 +57,11 @@ const ChatBox = () => {
     setTimeout(async () => {
       try {
         const response = await submitQuery(text);
-        addBotMessage(response.data.data);
+        if (response.data) {
+          addBotMessage(response.data);
+        } else {
+          addBotMessage("Sorry, an error occurred.\n\nTry something like\n'shelter 222 main st'");
+        }
       } catch (err) {
         addBotMessage("Sorry, I didn't understand that.\n\nTry something like\n'shelter 222 main st'");
       } finally {
