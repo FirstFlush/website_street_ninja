@@ -8,4 +8,13 @@ export async function fetchResources() {
         headers: { "Content-Type": "application/json" },
     });
     return res.data
-  }
+}
+
+export async function fetchMapPinSingle(resourceType:string, id: number): Promise<string> {
+    const fullRoute = `${API_ROUTES.mapPin}/${resourceType}/${id}/`
+    const res = await baseFetch(fullRoute, {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+    })
+    return res.data
+}

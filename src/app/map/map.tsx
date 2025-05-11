@@ -36,9 +36,8 @@ const Map = ({ mapData }: MapProps) => {
                 position={[resource.latitude, resource.longitude]}
                 icon={resourceIcons[typescriptSafeResource] || resourceIcons["default"]}
               >
-                {/* <Popup>{ resource.data ?? resourceType}</Popup> */}
-                <Popup>
-                  <PopoverContent data={resource.data} resourceType={resourceType} />
+                <Popup maxWidth={250} minWidth={250} autoPan={true}>
+                  <PopoverContent id={resource.id} resourceType={resourceType} />
                 </Popup>
               </Marker>
             );

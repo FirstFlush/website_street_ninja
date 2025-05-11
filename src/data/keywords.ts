@@ -1,7 +1,4 @@
-// import screenshotExpenses from '@/images/screenshots/expenses.png'
-// import screenshotPayroll from '@/images/screenshots/payroll.png'
-// import screenshotReporting from '@/images/screenshots/reporting.png'
-// import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+
 import { Home, Utensils, Droplet, Toilet, Wifi } from "lucide-react";
 
 export const keywords = [
@@ -9,35 +6,35 @@ export const keywords = [
       title: 'Shelter',
       description:
         "Find nearby places to sleep, with details on availability, restrictions, and hours.",
-      // image: screenshotPayroll,
+      color: "#FDE047",
       icon: Home
     },
     {
       title: 'Food',
       description:
         "Get free and low-cost meals, food banks, and takeout options near you.",
-      // image: screenshotExpenses,
-      icon: Utensils
+      icon: Utensils,
+      color: "#4ADE80",
     },
     {
       title: 'Water',
       description:
         "Locate drinking fountains and spots to refill bottles.",
-      // image: screenshotVatReturns,
+      color: "#3B82F6",
       icon: Droplet,
     },
     {
       title: 'Toilet',
       description:
         'Find public restrooms and hygiene facilities.',
-      // image: screenshotReporting,
+      color: "#EF4444",
       icon: Toilet,
     },
     {
       title: 'Wifi',
       description:
         'Access free public internet hotspots to stay connected.',
-      // image: screenshotReporting,
+      color: "#A78BFA",
       icon: Wifi,
     },
   ]

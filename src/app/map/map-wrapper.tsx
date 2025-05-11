@@ -28,7 +28,7 @@ const MapWrapper = () => {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center h-64 text-gray-600 pt-24">
+      <div className="flex mt-[10rem] flex-col items-center justify-center h-64 text-gray-600 pt-24">
         <Loader className="animate-spin" size={32} />
         <p className="mt-2 text-lg">Loading map...</p>
       </div>
