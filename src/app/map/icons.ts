@@ -20,10 +20,10 @@ const createCustomIcon = (color: string) =>
   });
 
 export const resourceIcons = {
-  shelter: createCustomIcon("#FDE047"),
-  food: createCustomIcon("#4ADE80"),
-  water: createCustomIcon("#3B82F6"),
-  toilet: createCustomIcon("#EF4444"),
-  wifi: createCustomIcon("#A78BFA"),
-  default: createCustomIcon("#A3A3A3"),
+  shelter: createCustomIcon("#7C3AED"),  // Indigo
+  food:    createCustomIcon("#FDE047"),  // Yellow
+  water:   createCustomIcon("#0EA5E9"),  // Blue
+  toilet:  createCustomIcon("#22C55E"),  // Purple
+  wifi:    createCustomIcon("#EF4444"),  // Red
+  default: createCustomIcon("#A3A3A3"),  // Gray
 };
