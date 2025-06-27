@@ -33,6 +33,12 @@ The **Street Ninja Website** serves as an informational hub for city staff, fund
 This project is licensed under the MIT License.
 
 
+## ☕ Support Street Ninja
+
+Street Ninja is fully self-hosted and independently maintained.
+If you’d like to support the project, [buy me a coffee](https://www.buymeacoffee.com/firstflush).
+
+
 ---
 
 
