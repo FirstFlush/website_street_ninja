@@ -14,13 +14,11 @@ function ReasonsDesktop() {
                   ...reason,
                   eyebrow: (
                     <Tab className="data-selected:not-data-focus:outline-hidden">
-                      <span className="absolute inset-0" />
                       {reason.eyebrow}
                     </Tab>
                   ),
                 }}
                 isActive
-                // isActive={reasonIndex === selectedIndex}
                 className="relative"
               />
             ))}
