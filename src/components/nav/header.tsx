@@ -41,7 +41,7 @@ const Header = () => {
         <nav onClick={handleClick} className="relative z-600 flex justify-between py-3">
           <div className="flex items-center md:gap-x-12">
             <Link href="/" aria-label="Home">
-              <Logo />
+              <Logo id="logo" />
             </Link>
           </div>
           <div className="flex items-center gap-x-4 md:gap-x-4">
