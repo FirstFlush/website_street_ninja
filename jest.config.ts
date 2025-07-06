@@ -9,7 +9,7 @@ const config: Config = {
   transform: {
     '^.+\\.(ts|tsx)$': ['ts-jest', {
       tsconfig: {
-        jsx: 'react-jsx', // This is crucial for JSX
+        jsx: 'react-jsx',
       },
     }],
   },
@@ -20,12 +20,13 @@ const config: Config = {
   ],
   
   moduleNameMapper: {
+    '^@/styles/tailwind.css$': '<rootDir>/__mocks__/cssMock.js',
     '^@/(.*)$': '<rootDir>/src/$1',
     '\\.(css|scss|sass)$': 'identity-obj-proxy',
   },
   
   testMatch: ['**/?(*.)+(test|spec).[jt]s?(x)'],
-  
+  testPathIgnorePatterns: ['<rootDir>/__tests__/e2e/'],  
   // Add these for better ESM support
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   globals: {
@@ -36,33 +37,3 @@ const config: Config = {
 };
 
 export default config;
-
-
-
-// import type { Config } from 'jest';
-
-// const config: Config = {
-//   preset: 'ts-jest/presets/default',
-//   testEnvironment: 'jsdom',
-//   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-//   transformIgnorePatterns: [
-//     'node_modules/(?!lucide-react.*\\.js$)',
-//   ],
-//   transform: {
-//     '^.+\\.tsx?$': [
-//       'ts-jest',
-//       {
-//         useESM: true,
-//         babelConfig: true,
-//       },
-//     ],
-//   },
-//   extensionsToTreatAsEsm: ['.ts', '.tsx'],
-//   moduleNameMapper: {
-//     '^@/(.*)$': '<rootDir>/src/$1',
-//     '\\.(css|scss|sass)$': 'identity-obj-proxy',
-//   },
-//   testMatch: ['**/?(*.)+(test|spec).[jt]s?(x)'],
-// };
-
-// export default config;
